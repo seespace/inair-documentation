@@ -77,3 +77,4 @@ Look back at the initial wireframe, we need an Image `UIImageView`, and 2 text l
 
 In order for the `UIImageView` to display an image, we need to have a photo named **photo1.jpg** in our **res/drawable** folder that matches the name in the property `ui:src="@drawable/photo1"`. Save the following pictures to your **res/drawable** folder: [photo1](http://inair.tv/wp-content/uploads/shared/photo1.jpg), [photo2](http://inair.tv/wp-content/uploads/shared/photo2.jpg), [photo3](http://inair.tv/wp-content/uploads/shared/photo3.jpg), [photo4](http://inair.tv/wp-content/uploads/shared/photo4.jpg), [photo5](http://inair.tv/wp-content/uploads/shared/photo5.jpg),
 
+Now run your application again, you would get something like this.
