@@ -3,13 +3,22 @@ Same as Android, InAir app is built using a hierarchy of `UIView` and `UIViewGro
 Continue from where we left off, this Lesson will guide you through building a simple Photo Gallery App.
 
 
-Let's assume we want to try something like the design above.
+Let's assume we want to try something like the following design:
+
+![insert image here]
+
 
 ##Creating the Layout XML File
 
-First thing to notice, most of the contents are located to the right side of the TV screen, with a distance of 1000 pixel to the left side of the screen, and 40 pixel to the rest of the border, thus with some math calculation. we create an `UIViewGroup` that can fit all the content we wanted as follow.
+Open the `test_layout.xml` file fom `res/layout` directory.
 
-> **FACT:** The pixel resolution of the screen is always 1920x1080 (aka 1080p). There's no other resolution in InAir. For design guideline, please refer to [this document](#design_guideline)
+The InAirBlankApp template we choosed at the begining of this tutorial includes a `test_layout.xml` file with a __UIViewGroup__ and a __UITextView__ child view.
+
+First, removes the `<UITextView>` element from the xml file.
+
+Back to the design, we notice that most of the contents are located to the right side of the TV screen, with a distance of 1000 pixel to the left side of the screen, and 40 pixel to the rest of the border, thus with some math calculation. we add some properties to the existing `UIViewGroup` so that can fit all the content we wanted as follow.
+
+> **Notes:** The pixel resolution of the screen is always 1920x1080 (aka 1080p). There's no other resolution in InAir. For design guideline, please refer to [this document](#design_guideline)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -28,7 +37,7 @@ First thing to notice, most of the contents are located to the right side of the
 ```
 The variable `ui:width`, `ui:height`, `ui:positionX` and `ui:positionY` are variables that define the boundings of the view group.
 
-Look back at the initial wireframe, we need an Image `UIImageView`, and 2 text labels (`UITextView`). Add them to the `UIViewGroup`, we get the following
+Look back at the initial wireframe, we also need an Image `UIImageView`, and 2 text labels (`UITextView`). Add them to the `UIViewGroup`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,3 +87,7 @@ Look back at the initial wireframe, we need an Image `UIImageView`, and 2 text l
 In order for the `UIImageView` to display an image, we need to have a photo named **photo1.jpg** in our **res/drawable** folder that matches the name in the property `ui:src="@drawable/photo1"`. Save the following pictures to your **res/drawable** folder: [photo1](http://inair.tv/wp-content/uploads/shared/photo1.jpg), [photo2](http://inair.tv/wp-content/uploads/shared/photo2.jpg), [photo3](http://inair.tv/wp-content/uploads/shared/photo3.jpg), [photo4](http://inair.tv/wp-content/uploads/shared/photo4.jpg), [photo5](http://inair.tv/wp-content/uploads/shared/photo5.jpg),
 
 Now run your application again, you would get something like this.
+
+![insert image here]
+
+Great, now you have the basic layout laid out. Proceed to the next lesson to learn how you can use *Binding* to make the Slideshow.
