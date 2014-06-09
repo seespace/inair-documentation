@@ -5,7 +5,7 @@ Continue from where we left off, this Lesson will guide you through building a s
 
 Let's assume we want to try something like the following design:
 
-![insert image here]
+![App Design](http://inair.tv/wp-content/uploads/shared/gallery_design.png "App Design")
 
 
 ##Creating the Layout XML File
@@ -88,6 +88,6 @@ In order for the `UIImageView` to display an image, we need to have a photo name
 
 Now run your application again, you would get something like this.
 
-![insert image here]
+![InAiR App With a Photo](http://inair.tv/wp-content/uploads/shared/running.jpg "InAiR App With a Photo")
 
 Great, now you have the basic layout laid out. Proceed to the next lesson to learn how you can use *Binding* to make the Slideshow.

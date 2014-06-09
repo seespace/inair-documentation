@@ -33,6 +33,9 @@ Once you have the emulator running, you can build and run your app by:
 
 1. Select **Run > Run 'app'**.
 2. Select InAir-x.x as your target device.
+
+![Target](http://inair.tv/wp-content/uploads/shared/target.jpg "Target")
+
 3. Wait for your app view to appear on screen. In this example, you will see the text "Hello world" appeared somewhere on the screen.
 
 Congratulation, you've built your first InAir app.

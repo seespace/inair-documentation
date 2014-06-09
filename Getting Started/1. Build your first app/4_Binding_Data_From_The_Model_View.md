@@ -72,6 +72,18 @@ And we create the Setters & Getters for them:
 ```
 Notice the function `notifyPropertyChanged("<property's name>");` that is being used on every setters? This function will tell the system that the corresponding property has changed and the layout should refresh to update with the new value.
 
+Let's give some random content to each property inside the class' constructor.
+
+```java
+  // Constructor
+  public TestModelView() {
+    setImageSrc(((BitmapDrawable) resources.getDrawable((R.drawable.photo1))));
+    setPhotoName("Amazing Photo");
+    setPhotoDescription("Lorem Ipsum Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui.");
+  }
+
+```
+
 ##The Layout XML
 
 Open our previous created xml `test_layout.xml`.
