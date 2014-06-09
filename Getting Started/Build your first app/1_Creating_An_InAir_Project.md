@@ -1,7 +1,3 @@
-Create An InAir Project
-=======================
-
-
 An InAiR project contains all the files that comprise the source code for your InAiR app. The InAiR SDK tools make it easy to start a new Android project with a set of default project directories and files.
 
 This lesson shows how to create a new project using Android Studio.
@@ -42,7 +38,8 @@ This starts the New Project wizard, which helps you set up a project using an ap
   - Make sure **Create activity** is the only enabled checkbox.
       Click **Next**
 3. Browse and select **InAiR Blank App Template** and Click **Next**
-4. Leave all the details for the activity in their default state and click **Finish**.
+4. On this screen, you are allowed to name your classes. For this demo, change the Class Prefix to "Test".
+5. Leave all the other details as suggested by the template and click **Finish**.
 
 Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next lesson.
 >**Note:** For additional help using Android Studio, read [Tips and Tricks](http://developer.android.com/sdk/installing/studio-tips.html).

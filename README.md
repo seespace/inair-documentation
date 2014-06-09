@@ -1,4 +1,4 @@
 InAiR-Documentation
 ===================
 
-Documentation and Knowledge Base for InAiR SDK/API
+Welcome to InAir Training Ground.
