@@ -32,7 +32,7 @@ InAir can be emulated by running a special build of Android Emulator. Please fol
 Once you have the emulator running, you can build and run your app by:
 
 1. Select **Run > Run 'app'**.
-2. Select IAEmulator as your target device.
+2. Select InAir-x.x as your target device.
 3. Wait for your app view to appear on screen. In this example, you will see the text "Hello world" appeared somewhere on the screen.
 
 Congratulation, you've built your first InAir app.
