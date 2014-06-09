@@ -1,3 +1,7 @@
+Create An InAir Project
+=======================
+
+
 An InAiR project contains all the files that comprise the source code for your InAiR app. The InAiR SDK tools make it easy to start a new Android project with a set of default project directories and files.
 
 This lesson shows how to create a new project using Android Studio.
@@ -21,17 +25,24 @@ Although sharing lots of common libraries, InAiR Apps are quite different from a
 2. Extract the .zip fle
 4. Navigate to `<Your Android Studio Folder>/plugins/android/lib/templates/activities/`
 5. Copy `InAirLayeredActivity` and `InAirBlankActivity` to the previous folder
-6. Start (or Restart) Android Studios
+6. Start (or Restart) Android Studio
 
 ###Start a New Project
 When you launch Android Studio for the first time, you'll see a Welcome screen that offers several ways to get started:
 
 1. To start building a new app, click **New Project**.
 This starts the New Project wizard, which helps you set up a project using an app template.
-2. To import an existing Android app project, click Import Project.
+2. Fill the required fields:
+  - **Application Name**  is the app name that appears to users. For this project, use "My First InAiR App."
+  - **Module name:** Used by the IDE only, just leave it as default.
+  - **Package Name** is the package namespace for your app (following the same rules as packages in the Java programming language). Your package name must be unique across all packages installed on the Android system. For this reason, it's generally best if you use a name that begins with the reverse domain name of your organization or publisher entity. For this project, you can use something like "com.example.myfirstapp." However, you cannot publish your app on Google Play using the "com.example" namespace.
+  - **Minimum Required SDK, Target SDK, Compile with** are level of Android API to support. For InAir projects, please select **API 19: Android 4.4 (KitKat)** for all
+  - **Language Level** Minimum supported is 6.0. You can choose 7.0 if you have JDK7 installed.
+  - **Theme** InAiR App doesn't support this feature, you can leave it as it be, or choose None for consistency.
+  - Make sure **Create activity** is the only enabled checkbox.
+      Click **Next**
+3. Browse and select **InAiR Blank App Template** and Click **Next**
+4. Leave all the details for the activity in their default state and click **Finish**.
 
-
-
-For additional help using Android Studio, read [Tips and Tricks](http://developer.android.com/sdk/installing/studio-tips.html).
-
-As you continue developing apps, you may need to install additional versions of Android for the emulator and other packages such as the Android Support Library. To install more packages, use the SDK Manager, which you can open from Android Studio by clicking SDK Manager  in the toolbar.
+Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next lesson.
+>**Note:** For additional help using Android Studio, read [Tips and Tricks](http://developer.android.com/sdk/installing/studio-tips.html).
