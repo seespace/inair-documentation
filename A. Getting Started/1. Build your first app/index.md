@@ -7,7 +7,7 @@ InAiR is built on a heavily modified Android KitKat, so it's highly recommended 
 
 1. Download the [Android SDK](http://developer.android.com/sdk/index.html).
 2. Download and install [Android Studio](http://developer.android.com/sdk/installing/studio.html).
-3. Download the **4.4** SDK tools and platforms using the SDK Manager.
+3. Download the **4.4 SDK tools** and platforms using the SDK Manager.
 4. Checkout [InAiR SDK](https://github.com/seespace/InAiR-SDK) Library.
 5. Download [InAiR Emulator](http://developer.inair.tv/upload_file/attachment/inair-image-arm.zip).
 
