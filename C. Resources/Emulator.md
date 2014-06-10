@@ -33,3 +33,4 @@ Keyboard are mainly used for debugging purpose, and only available to the Emulat
 - __Backspace:__ Go backward, go to previous view, quit app
 - __M Key:__ Move to Next Layer in a LayeredView
 - __N Key:__ Move to Previous Layer in a LayeredView
+- __W/S Key:__ Move Up/Down on the Menu
