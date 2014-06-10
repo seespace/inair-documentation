@@ -1,6 +1,7 @@
-Welcome to InAiR application development!
+<img src="http://inair.tv/wp-content/uploads/shared/android_inair.png" width="200"/>
 
-This article will teach you how to build your first InAiR application. This class teaches you how to build your first InAiR app. You’ll learn how to create an InAiR project and run a debuggable version of the app. You'll also learn some fundamentals of InAiR app design, including how to build a simple user interface and handle user input.
+###Welcome to InAiR application development!
+This article will teach you how to build your first __InAiR application__. This class teaches you how to build your first InAiR app. You’ll learn how to create an InAiR project and run a debuggable version of the app. You'll also learn some fundamentals of InAiR app design, including how to build a simple user interface and handle user input.
 
 InAiR is built on a heavily modified Android KitKat, so it's highly recommended that you have some Android background before starting this class. Before you begin, be sure you have your development environment set up. You need to:
 
@@ -8,7 +9,7 @@ InAiR is built on a heavily modified Android KitKat, so it's highly recommended 
 2. Download and install [Android Studio](http://developer.android.com/sdk/installing/studio.html).
 3. Download the **4.4** SDK tools and platforms using the SDK Manager.
 4. Checkout [InAiR SDK](https://github.com/seespace/InAiR-SDK) Library.
-5. Download [InAiR Emulator](#).
+5. Download [InAiR Emulator](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/C.%20Resources/Emulator).
 
 > Note: Make sure you install the 4.4 versions of the ADT plugin and the Android SDK before you start this class. The procedures described in this class may not apply to any other version.
 
