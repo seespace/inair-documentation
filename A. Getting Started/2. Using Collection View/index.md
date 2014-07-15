@@ -38,6 +38,6 @@ If you want your collection view to update automatically when your item source c
 ###In this section
 Topic         | Description
 ------------- | -------------
-Using [UILayeredNavigation](1. Using the Layered Navigation/) | Layout that manages the navigation of content in Z-axis layers
-Using [UIListView](2. Using the List View/) | Arranges child elements into vertical line.
-Using [UIMenuView](3. Using the Menu View/) | Represent a menu control that layout child elements into a vertical line.
+Using [UILayeredNavigation](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/1.%20Using%20the%20Layered%20Navigation) | Layout that manages the navigation of content in Z-axis layers
+Using [UIListView](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/2.%20Using%20the%20List%20View) | Arranges child elements into vertical line.
+Using [UIMenuView](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/3.%20Using%20the%20Menu%20View) | Represent a menu control that layout child elements into a vertical line.

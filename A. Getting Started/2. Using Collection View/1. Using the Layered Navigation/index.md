@@ -6,6 +6,6 @@ Each Layer of a `UILayeredNavigation` interface is associated with a custom layo
 ![Figure 1](http://developer.inair.tv/upload_file/attachment/0716035118.png "Figure 1")
 
 ###In this section:
-1. [Setting up the Layered Navigation](1. Setting up the Layered Navigation)
-2. [Binding data source](2. Binding data source)
-3. [Programatically way](3. Programatically way)
+1. [Setting up the Layered Navigation](http://developer.inair.tv/knowledgebase/1.%20Setting%20up%20the%20Layered%20Navigation)
+2. [Binding data source](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/1.%20Using%20the%20Layered%20Navigation/2.%20Binding%20data%20source)
+3. [Programatically way](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/1.%20Using%20the%20Layered%20Navigation/3.%20Programatically%20way)

@@ -6,6 +6,6 @@ By default, a data item is displayed in the `UIListView` as the string represent
 ![Figure 1](http://developer.inair.tv/upload_file/attachment/0716041827.png "Figure 1")
 
 ###In this section:
-1. [Setting up the List View](1. Setting up the List View)
-2. [Binding data source](2. Binding data source)
-3. [Programatically way](3. Programatically way)
+1. [Setting up the List View](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/2.%20Using%20the%20List%20View/1.%20Setting%20up%20the%20List%20View)
+2. [Binding data source](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/2.%20Using%20the%20List%20View/2.%20Binding%20data%20source)
+3. [Programatically way](http://developer.inair.tv/knowledgebase/index.php?InAiR-Documentation/A.%20Getting%20Started/2.%20Using%20Collection%20View/2.%20Using%20the%20List%20View/3.%20Programatically%20way)
