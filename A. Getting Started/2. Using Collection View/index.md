@@ -20,18 +20,21 @@ When using a collection view, first thing you maybe wonder how can we set data s
 
 > If you want your collection auto update when you item source changes (such as add more item, delete item, ...) `ItemsSource` must be an ObservableCollection ~ a java list that will raise event when collection changed.
 
-* The `ItemTemplate` property stands for template view for each item view when it populates from data source. `ItemTemplate` must be an xml file which contain a `DataTemplate` tag.
+* The `ItemTemplate` property stands for template view for each item view when it populates from data source. `ItemTemplate` must be an xml file which contain a `DataTemplate` element.
 
-> A simple datatemplate file
+> `DataTemplale` is an object that definds a relationship between a layout view, presenting by `templateId` attribute, and a data tag, presenting by `templateTag`.
+A simple datatemplate file
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<DataTemplate
-  xmlns:ui="http://schemas.android.com/apk/res-auto"
-  ui:templateId="@layout/first_layer"
-  />
+<MutilDataTemplate xmlns:ui="http://schemas.android.com/apk/res-auto">
+    <DataTemplate
+        ui:templateId="@layout/first_layout"
+        ui:templateTag="firstlayer"/>
+    <DataTemplate
+        ui:templateId="@layout/second_layout"
+        ui:templateTag="secondlayer"/>
+</MutilDataTemplate>
 ```
-
-> **Notes:** Using binding method with collection view is the easiest way to populate data for a collection view.
 
 ###In this section
 Topic         | Description
