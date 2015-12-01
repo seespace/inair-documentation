@@ -1,7 +1,8 @@
 {
     "plugins": [
         "advanced-emoji",
-        "collapsible-menu"
+        "collapsible-menu",
+        "fancybox"
     ],
     "pluginsConfig": {}
 }
