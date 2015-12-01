@@ -10,6 +10,6 @@
        * [Add input listener](1-getting-started/1-build-your-first-app/5-add-input-listener.md)
    * [Managing activity life cycle](1-getting-started/2-managing-activity-lifecycle.md)
    * [Application Manifest](1-getting-started/3-application-manifest.md)
-* API Guides
+* [API Guides](2-api-guides/4-animation-and-graphics/4-present-dismiss.md)
 * Samples
 
