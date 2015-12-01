@@ -5,5 +5,10 @@
         "fancybox",
         "infinitescroll"
     ],
+    "links": {
+        "sidebar": {
+            "Contact us / Support": "http://developer.inair.tv/"
+        }
+    },
     "pluginsConfig": {}
 }
