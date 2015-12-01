@@ -2,7 +2,8 @@
     "plugins": [
         "advanced-emoji",
         "collapsible-menu",
-        "fancybox"
+        "fancybox",
+        "infinitescroll"
     ],
     "pluginsConfig": {}
 }
