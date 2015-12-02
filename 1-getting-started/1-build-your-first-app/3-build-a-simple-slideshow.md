@@ -84,10 +84,10 @@ Look back at the initial wireframe, we also need an Image `UIImageView`, and 2 t
 </UIViewGroup>
 ```
 
-In order for the `UIImageView` to display an image, we need to have a photo named **photo1.jpg** in our **res/drawable** folder that matches the name in the property `ui:src="@drawable/photo1"`. Save the following pictures to your **res/drawable** folder: [photo1](http://inair.tv/wp-content/uploads/shared/photo1.jpg), [photo2](http://inair.tv/wp-content/uploads/shared/photo2.jpg), [photo3](http://inair.tv/wp-content/uploads/shared/photo3.jpg), [photo4](http://inair.tv/wp-content/uploads/shared/photo4.jpg), [photo5](http://inair.tv/wp-content/uploads/shared/photo5.jpg),
+In order for the `UIImageView` to display an image, we need to have a photo named **photo1.jpg** in our **res/drawable** folder that matches the name in the property `ui:src="@drawable/photo1"`. Save the following pictures to your **res/drawable** folder: [photo1](../../images/photo1.jpg), [photo2](../../images/photo2.jpg), [photo3](../../images/photo3.jpg), [photo4](../../images/photo4.jpg), [photo5](../../images/photo5.jpg),
 
 Now run your application again, you would get something like this.
 
-![InAiR App With a Photo](http://inair.tv/wp-content/uploads/shared/running.jpg "InAiR App With a Photo")
+![InAiR App With a Photo](../../images/running.jpg "InAiR App With a Photo")
 
 Great, now you have the basic layout laid out. Proceed to the next lesson to learn how you can use *Binding* to make the Slideshow.
