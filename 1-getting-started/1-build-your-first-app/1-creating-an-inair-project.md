@@ -1,3 +1,6 @@
+Creating an InAiR Project
+=========================
+
 An InAiR project contains all the files that comprise the source code for your InAiR app. The InAiR SDK tools make it easy to start a new InAiR project with a set of default project directories and files.
 
 This lesson shows how to create a new project using Android Studio.
