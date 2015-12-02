@@ -1,8 +1,9 @@
-# Introduction to Android / InAir OS
+Introduction to InAiR app development
+=====================================
 
-You probably already know that InAir OS is based on Android. While sharing a lot of concepts with Android, InAir app development is pretty different from Android app development. This section clarifies main differences between two platforms.
+InAiR OS is based on Android OS. While sharing a lot of concepts with Android, InAiR app development is pretty different from Android app development.
 
-## Prerequisites
-To develop application for InAir, basic Android knowledge is required. If you're new to Android development, we recommend you reading [Android documentation][androiddoc] first.
+Prerequisites
+-------------
+To develop application for InAiR, basic Android knowledge is required. If you're new to Android development, we recommend you reading [Android documentation](https://developer.android.com/guide/index.html) first.
 
-[androiddoc]: https://developer.android.com/guide/index.html
