@@ -30,5 +30,3 @@
 
 
 * Samples
-
-[test](README.md)
