@@ -1,3 +1,6 @@
+Add Input Listener
+==================
+
 In the last lesson, we've successfully binded some UIView's properties to the Model View, which means that any time those properties in the model view is changed, the corresponding binded values in the View will be changed and the change will be visible right away on the display.
 
 
