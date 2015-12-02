@@ -13,7 +13,7 @@ After you've installed the Android SDK & InAiR SDK, start with this class to lea
 - [Binding Data](1-build-your-first-app/4-binding-data.md)
 - [Add Input Listener](1-build-your-first-app/5-add-input-listener.md)
 
-[Managing Activity Lifecycle](2-managing-activity-lifecycle.md)
+[InAiR Activity Lifecycle](2-inair-activity-lifecycle.md)
 ---------------------
 How InAiR activities live and die and how to create a seamless user experience by implementing lifecycle callback methods.
 
