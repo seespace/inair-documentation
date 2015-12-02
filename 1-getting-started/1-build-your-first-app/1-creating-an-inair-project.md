@@ -29,7 +29,8 @@ When you launch Android Studio for the first time, you'll see a Welcome screen t
 
 1. To start building a new app, click **New Project**.
 This starts the New Project wizard, which helps you set up a project using an app template.
-![Android Studio Step 1](http://inair.tv/wp-content/uploads/shared/step1.jpg "Step 1")
+
+![Android Studio Step 1](../../images/step1.png "Step 1")
 2. Fill the required fields:
   - **Application Name**  is the app name that appears to users. For this project, use "My First InAiR App."
   - **Module name:** Used by the IDE only, just leave it as default.
@@ -40,9 +41,9 @@ This starts the New Project wizard, which helps you set up a project using an ap
   - Make sure **Create activity** is the only enabled checkbox.
       Click **Next**
 3. Browse and select **InAiR Blank App Template** and Click **Next**
-![Android Studio Step 2](http://inair.tv/wp-content/uploads/shared/step2.jpg "Step 2")
+![Android Studio Step 2](../../images/step2.jpg "Step 2")
 4. On this screen, you are allowed to name your classes. For this demo, change the Class Prefix to "Test".
-![Android Studio Step 3](http://inair.tv/wp-content/uploads/shared/step3.jpg "Step 3")
+![Android Studio Step 3](../../images/step3.jpg "Step 3")
 5. Leave all the other details as suggested by the template and click **Finish**.
 
 Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next lesson.
