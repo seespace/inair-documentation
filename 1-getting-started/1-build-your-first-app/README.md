@@ -1,5 +1,5 @@
-Welcome to InAiR application development!
-=========================================
+Build Your First App
+====================
 
 This article will teach you how to build your first __InAiR application__. This class teaches you how to build your first InAiR app. You'll learn how to create an InAiR project and run a debuggable version of the app. You'll also learn some fundamentals of InAiR app design, including how to build a simple user interface and handle user input.
 
