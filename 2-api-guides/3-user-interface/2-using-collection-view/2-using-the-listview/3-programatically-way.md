@@ -28,12 +28,12 @@ The main Layout in our recent demo app is a `UILayeredViewItem` that contains an
 ### Programmatically create UIListView 
 Open `MainViewLayout`, which define the only layout for our app. Instead of set content view from XML, we create an `UILayeredViewItem` object named `root`.
 ```java 
-	@Override
-    public void onInitialize(Bundle bundle) {
-        UILayeredViewItem root = new UILayeredViewItem(this);
-        setAndBindRootContentView(root, new MainViewModel(this));
+@Override
+public void onInitialize(Bundle bundle) {
+    UILayeredViewItem root = new UILayeredViewItem(this);
+    setAndBindRootContentView(root, new MainViewModel(this));
 
-    } 
+} 
 ```
 Now, as we discussed before, the `UILayeredViewItem` contains `UIListView` so we create a `UIListView` item and set it as the content view of `root`
 ```java
