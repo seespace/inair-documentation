@@ -107,30 +107,26 @@ There're 3 properties inside this XML we need to change in order to bind with ou
   <UIImageView
       ui:width="800"
       ui:height="500"
-      ui:src="{Binding Path: imageSrc}"
+      ui:src="{Binding Path: 'imageSrc'}"
       />
   <UITextView
       ui:height="60.0"
       ui:width="800.0"
-      ui:text="{Binding Path: photoName}"
+      ui:text="{Binding Path: 'photoName'}"
       ui:textColor="@color/white"
       ui:textSize="40.0"
       ui:textStyle="bold"
       ui:alpha="1.0"
-      ui:positionX="0.0"
-      ui:positionY="540.0"
-      ui:positionZ="0.0"/>
+      ui:positionY="540.0"/>
   <UITextView
       ui:height="400.0"
       ui:width="800.0"
-      ui:text="{Binding Path: photoDescription}"
+      ui:text="{Binding Path: 'photoDescription'}"
       ui:textColor="@color/white"
       ui:textSize="20.0"
       ui:textStyle="normal"
       ui:alpha="1.0"
-      ui:positionX="0.0"
-      ui:positionY="600.0"
-      ui:positionZ="0.0"/>
+      ui:positionY="600.0"/>
 
 </UIViewGroup>
 ```
