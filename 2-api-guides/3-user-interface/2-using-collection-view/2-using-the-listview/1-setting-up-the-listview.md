@@ -1,86 +1,85 @@
-This lesson will guide you through building a simple Color Application like [Figure 1]() in `Overview` section.
+The following of this guide will guide you through building above simple Color Application.
+First of all: Create your app using InAir Blank App Template.
 
-__First of all:__ we using InAir Blank App Template
+### Creating the Main Layout XML File: 
 
-###Creating a list view item
-Create new xml with name `right_layout.xml` file and save it to `res/layout` folder. We use this file as a template for right color item of list view. Following design, we need an `UIRectView` to present color and an `UITextView` to show a color name.
-
-Compelete `right_layout.xml` file:
+Create the `main_layout.xml` file in `res/layout` directory. Since this application using a `UIListView`, we need to create an empty `UIListView` element as this code below. Notice the `itemTemplate` attribute, it defines the layout for your `UIListView` item. Remove this attribute make the data item would be displayed in the `UIListView` as the string representation of the data object it's bound to.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<UIViewGroup
-	xmlns:ui="http://schemas.android.com/apk/res-auto">
-	
-	<UIRectView
-	  ui:height="100"
-	  ui:width="100"
-	  ui:color="#ffffffff" />
+<UILayeredViewItem
+    xmlns:ui="http://schemas.android.com/apk/res-auto">
 
-	<UITextView
-    ui:width="250"
-    ui:positionX="105"
-    ui:positionY="20"
-    ui:text="White"
-    ui:textSize="40" />
-
-</UIViewGroup>
+    <UIListView
+    </UIListView>
+</UILayeredViewItem>
 ```
 
-We need to create another xml file with name `left_layout.xml` and save it to `res/layout` folder. This file will be used as a template for left color item of list view. Just like `right_layout.xml`.
 
-Compelete `left_layout.xml` file:
+### Define data template
+Create new XML file named `right\_layout.xml` and put it into `res/layout`. We use this file as a template for right color item of list view. Following the design, we need an `UIRectView` to present color and an `UITextView` to show a color name.
+
+Complete `right_layout.xml` file:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UIViewGroup
 	xmlns:ui="http://schemas.android.com/apk/res-auto">
 
-	<UITextView
-    ui:width="250"
-    ui:positionY="20"
-    ui:text="White"
-    ui:textSize="40" />
-	
-	<UIRectView
-		ui:positionX="255"
-	  ui:height="100"
-	  ui:width="100"
-	  ui:color="#ffffffff" />
+<UIRectView
+	ui:height="100"
+	ui:width="100"
+	ui:color="#ffffffff" />
+
+<UITextView
+	ui:width="250"
+	ui:positionX="105"
+	ui:positionY="20"
+	ui:text="White"
+	ui:textSize="40" />
 
 </UIViewGroup>
 ```
 
-###Define a data template
-Create the `listview_datatemplate.xml` file and save it to `res/layout`.
+We need to create another XML file named `left_layout.xml` and save it to `res/layout`. This file will be used as a template for left color item of list view. Just like `right_layout.xml`.
 
-Complete xml file
+Complete `left_layout.xml` file:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<MultiDataTemplate xmlns:ui="http://schemas.android.com/apk/res-auto">
+<UIViewGroup
+	xmlns:ui="http://schemas.android.com/apk/res-auto">
+
+<UITextView
+    ui:width="250"
+    ui:positionY="20"
+    ui:text="White"
+    ui:textSize="40" />
+
+<UIRectView
+	ui:positionX="255"
+	ui:height="100"
+	ui:width="100"
+	ui:color="#ffffffff" />
+
+</UIViewGroup>
+```
     
-  <DataTemplate
-    ui:templateId="@layout/right_layout"
-    ui:templateTag="right"/>
-
-  <DataTemplate
-    ui:templateId="@layout/left_layout"
-    ui:templateTag="left"/>
-
-</MultiDataTemplate>
-```
-
-###Creating the Layout XML File
-Open the `main_layout.xml` file from `res/layout` directory. Since this application using a `UIListView`, we need to change the content of this xml file following this code below:
-
+Now we have all materials to create the item data template. Insert `template` element into `UIListView` as below: 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
+<UILayeredViewItem
+    xmlns:ui="http://schemas.android.com/apk/res-auto">
 
-<UIListView
-  xmlns:ui="http://schemas.android.com/apk/res-auto"
-  ui:positionX="1280.0"
-  ui:width="400.0"
-  ui:height="1080.0"
-  ui:itemTemplate="@layout/listview_datatemplate"/>
+    <UIListView>
+        <template>
+            <DataTemplate
+                ui:templateId="@layout/right_layout"
+                ui:templateTag="right"/>
 
+            <DataTemplate
+                ui:templateId="@layout/left_layout"
+                ui:templateTag="left"/>
+        </template>
+    </UIListView>
+</UILayeredViewItem>
 ```
-
 Now your application is nearly completed. Proceed to the next lesson to learn how you can use *Binding* to complete the application.
