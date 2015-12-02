@@ -13,7 +13,7 @@
    * [Application Manifest](1-getting-started/3-application-manifest.md)
 
 
-* [API Guides](2-api-guides/README.md)
+* [API Guides](2-api-guides/1-introduction/README.md)
     * [Introduction](2-api-guides/1-introduction/README.md)
     * App Components
     * User Interface
@@ -23,6 +23,7 @@
         * [Animation](2-api-guides/4-animation-and-graphics/3. Animation.md)
         * [Present/Dismiss](2-api-guides/4-animation-and-graphics/4-present-dismiss.md)
     * [Events](2-api-guides/5-events/index.md)
+
 
 * Samples
 
