@@ -5,7 +5,7 @@ Let's start from our recent `UIListView` demo app.
 
 ### Review the Main_Layout
 The main Layout in our recent demo app is a `UILayeredViewItem` that contains an `UIListView` with two list item templates for the odd and even item, and some attributes.
-```java
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UILayeredViewItem
     xmlns:ui="http://schemas.android.com/apk/res-auto">
