@@ -1,3 +1,6 @@
+Getting Started
+===============
+
 Welcome to Training for InAiR developers. Here you'll find sets of lessons within classes that describe how to accomplish a specific task with code samples you can re-use in your app. Classes are organized into several groups you can see at the top-level of the left navigation.
 
 [Build Your First App](1-build-your-first-app/README.md)
