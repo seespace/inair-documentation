@@ -1,11 +1,14 @@
-Same as Android, InAir app is built using a hierarchy of `UIView` and `UIViewGroup`. InAir provides an XML vocabulary that corresponds to the subclasses of `UIView` and `UIViewGroup` so you can define your UI in XML using a hierarchy of UI elements.
+Build a Simple Slideshow
+========================
+
+Same as Android, InAiR app is built using a hierarchy of `UIView` and `UIViewGroup`. InAiR provides an XML vocabulary that corresponds to the subclasses of `UIView` and `UIViewGroup` so you can define your UI in XML using a hierarchy of UI elements.
 
 Continue from where we left off, this Lesson will guide you through building a simple Photo Gallery App.
 
 
 Let's assume we want to try something like the following design:
 
-![App Design](http://inair.tv/wp-content/uploads/shared/gallery_design.png "App Design")
+![App Design](../../images/gallery_design.png "App Design")
 
 
 ##Creating the Layout XML File
