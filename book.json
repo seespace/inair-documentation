@@ -7,7 +7,7 @@
     ],
     "links": {
         "sidebar": {
-            "Contact us / Support": "http://developer.inair.tv/"
+            "Contact us / Support": "https://github.com/seespace/inair-documentation/issues"
         }
     },
     "pluginsConfig": {}
