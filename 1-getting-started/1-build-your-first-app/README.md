@@ -1,7 +1,7 @@
 Build Your First App
 ====================
 
-This tutorial will help you to learn how to build your first __InAiR application__. You'll learn how to create an InAiR project and run a debuggable version of the app. You'll also learn some fundamentals of InAiR app design, including how to build a simple user interface and handle user input.
+This tutorial will help you to learn how to build your first __InAiR application__. You'll learn how to create an InAiR project and run a debugable version of the app. You'll also learn some fundamentals of InAiR app design, including how to build a simple user interface and handle user input.
 
 InAiR is built on a heavily modified Android KitKat, therefore it's highly recommended that you have some basic understanding in developing applications for Android platform. Before you begin, make sure that you have your development environment set up. You need to:
 
