@@ -27,7 +27,7 @@
         * [Raising an Event](2-api-guides/5-events/2. Raising an Event.md)
         * [Routed Event](2-api-guides/5-events/3. Routed Event.md)
         * [Input Event](2-api-guides/5-events/4. Input Event.md)
-    * [InAiR Services] 
+    * InAiR Services
         * Input Service
         * Remote service
         * Media Source Service
