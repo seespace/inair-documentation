@@ -12,4 +12,4 @@ InAiR is built on a heavily modified Android KitKat, therefore it's highly recom
 
 > Note: Make sure you install the 4.4 versions of the ADT plugin and the Android SDK before you start this class. The procedures described in this class may not apply to any other version.
 
-This series of tutorials will walk you through the process of creating a simple InAiR application using fundamental concepts and UI, such as: data binding, layered navigation, etc. It's important that you understand the concepts before moving on.
+This series of tutorials will walk you through the process of creating a simple InAiR application using fundamental concepts and UI, such as: data binding, layered navigation, etc. It's important that you understand these basic concepts before moving on to more advanced techniques.
