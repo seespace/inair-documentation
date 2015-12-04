@@ -10,9 +10,9 @@ This lesson shows how to create a new project using Android Studio.
 
 Install InAiR App Generator
 ---------------------------
-Although sharing lots of common libraries, InAiR Apps are quite different from a traditional Android Apps. Only Apps developed using our SDK will appear on our launcher. To make the process easier, we've provided [InAiR App Generator](Airman.md) for you to quickly start your development.
+Although sharing lots of common libraries, InAiR Apps are quite different from a traditional Android Apps. Only Apps developed using our SDK will appear on our launcher. To make the process easier, we've provided [InAiR App Generator](../../Airman.md) for you to quickly start your development.
 
-If you haven't installed Airman yet, please follow instructions [here](Airman.md).
+If you haven't installed Airman yet, please follow instructions [here](../../Airman.md).
 
 1. Launch Airman and choose a template (__BlankApp__ in this lesson)
 
