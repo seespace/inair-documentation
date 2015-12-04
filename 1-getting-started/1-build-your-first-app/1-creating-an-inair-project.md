@@ -8,9 +8,9 @@ This lesson shows how to create a new project using Android Studio.
 >**Note:** You should already have the Android SDK and Android Studio installed, if not follow the  Google's guide to [Installing the Android SDK](http://developer.android.com/sdk/installing/index.html) before you start this lesson.
 
 
-Install InAiR App Template for Android Studio
----------------------------------------------
-Although sharing lots of common libraries, InAiR Apps are quite different from a traditional Android Apps. Only Apps developed using our SDK will appear on our launcher. To make the process easier, we've provided two templates for you to quickly start your development.
+Install InAiR App Generator
+---------------------------
+Although sharing lots of common libraries, InAiR Apps are quite different from a traditional Android Apps. Only Apps developed using our SDK will appear on our launcher. To make the process easier, we've provided App Generator for you to quickly start your development.
 
 ####MacOSX
 1. Download [InAiR App Templates](https://github.com/seespace/inair-app-templates/archive/master.zip)
