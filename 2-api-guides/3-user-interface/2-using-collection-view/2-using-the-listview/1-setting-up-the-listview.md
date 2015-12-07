@@ -63,7 +63,10 @@ Complete `left_layout.xml` file:
 </UIViewGroup>
 ```
     
-Now we have all materials to create the item data template. Insert `template` element into `UIListView` as below: 
+Now we have all materials to create the item data template for the ListView. Insert `template` element with two `DataTemplate` to determind they layouts which `UIListView` will display its item
+
+Complete the XML file: 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UILayeredViewItem
