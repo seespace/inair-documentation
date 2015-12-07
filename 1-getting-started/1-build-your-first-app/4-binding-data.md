@@ -119,3 +119,7 @@ Update the file as follows:
 
 The syntax `{Binding Path: <property name>}` will tell the layout to look for the corresponding variable inside the model view and listen for changes produced by the binding property's setter.
 
+Now run your application again, the [photo2](../images/photo2.jpg) should be displayed.
+
+![Photo 2](../../images/photo2.jpg)
+
