@@ -8,7 +8,7 @@ InAiR is built on a heavily modified Android KitKat, therefore it's highly recom
 1. Download the [Android SDK](http://developer.android.com/sdk/index.html).
 2. Download and install [Android Studio](http://developer.android.com/sdk/installing/studio.html).
 3. Download the **4.4 SDK tools** and platforms using the SDK Manager.
-4. _(Optional)_ Download and install [InAiR App Generator](../../Airman.md)
+4. Download and install [InAiR App Generator](../../Airman.md)
 
 > Note: Make sure you install the 4.4 versions of the ADT plugin and the Android SDK before you start this tutorial. The procedures described in this tutorial may not apply to any other version.
 
