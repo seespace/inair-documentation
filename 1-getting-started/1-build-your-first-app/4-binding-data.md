@@ -146,5 +146,5 @@ The syntax `{Binding Path: <property name>}` will tell the layout to look for th
 
 Now run your application again, the [photo2](../images/photo2.jpg) should be displayed.
 
-![Photo 2](../../images/photo2.jpg)
+![InAiR binding](../../images/running2.jpg)
 
