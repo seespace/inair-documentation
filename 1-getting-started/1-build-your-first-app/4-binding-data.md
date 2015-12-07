@@ -25,6 +25,31 @@ Your class should read as follows:
 ```
 Now you have a barebone `ViewModel` with no properties. 
 
+The Activity
+------------
+
+1. In Android Studio, open the `MainActivity.java` file.
+2. Set the `Activity`'s data context. 
+
+The result look like this:
+
+```java
+package com.example.helloworld;
+
+...
+
+public class MainActivity extends IAActivity {
+
+  public static final String TAG = "Hello World";
+
+  @Override
+  public void onInitialize(Bundle bundle) {
+    setRootContentView(R.layout.activity_main);
+    setDataContext(new MainViewModel(this));
+  }
+}
+```
+
 The Properties
 --------------
 
