@@ -1,12 +1,11 @@
 Binding Data
 ============
 
-InAiR SDK uses variable-binding as a method to connect between properties and layouts. In short, it means that layout can change the appearance automatically when binded properties were changed. Refer to [InAir MVVM & Binding articles](#article) if you want to learn more.
+InAiR SDK uses [data-binding](https://msdn.microsoft.com/en-us/library/ms752347%28v=vs.100%29.aspx) to connect between properties and layouts. This lesson will teach you the basic of creating a binding within InAiR SDK.
 
-This lesson will teach you the basic of creating a binding within InAiR SDK.
-
-##The Model View
-The __Model View Class__ is the brain of our InAir Application and it's linked very closely with the __Layout__.
+[The View Model](#layout)
+--------------
+The __ViewModel__ class is the brain of our InAiR Application and it's linked very closely with the __Layout__.
 
 Open the file `TestModelView` inside the `modelview` package. You should see the following content:
 
@@ -87,7 +86,7 @@ Let's give some random content to each property inside the class' constructor.
 
 ```
 
-##The Layout XML
+##The Layout XML{#layout}
 
 Open our previous created xml `test_layout.xml`.
 There're 3 properties inside this XML we need to change in order to bind with our Model View properties declared previously:
