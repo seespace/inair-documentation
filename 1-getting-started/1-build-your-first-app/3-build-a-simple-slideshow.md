@@ -78,8 +78,8 @@ Here are the `<UIImageView>` attributes you added:
 * `ui:width` and `ui:height` Define image's size. Note that `ui:positionX` and `ui:positionY` attributes are not defined, which will have the default value 0.
 * `ui:src` Sets a drawable as the content of this UIImageView. At the moment, the [photo1](../../images/photo1.jpg) is being displayed.
  
-Add photo title
----------------
+Add photo title & photo description
+-----------------------------------
 
 1. In Android Studio, from the `res/layout` directory, edit the `activity_main.xml` file.
 2. Within the `<UIViewGroup>` element, define 2 `<UITextView>` elements.
