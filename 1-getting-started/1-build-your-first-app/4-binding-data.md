@@ -1,7 +1,7 @@
 Binding Data
 ============
 
-InAiR SDK uses Variable-binding as a method to connect between properties and layouts. In short, it means that layout can change the appearance automatically when binded properties were changed. Refer to [InAir MVVM & Binding articles](#article) if you want to learn more.
+InAiR SDK uses variable-binding as a method to connect between properties and layouts. In short, it means that layout can change the appearance automatically when binded properties were changed. Refer to [InAir MVVM & Binding articles](#article) if you want to learn more.
 
 This lesson will teach you the basic of creating a binding within InAiR SDK.
 
