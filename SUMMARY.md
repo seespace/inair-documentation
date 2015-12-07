@@ -9,7 +9,7 @@
        * [Build a simple slideshow](1-getting-started/1-build-your-first-app/3-build-a-simple-slideshow.md)
        * [Binding data](1-getting-started/1-build-your-first-app/4-binding-data.md)
        * [Add input listener](1-getting-started/1-build-your-first-app/5-add-input-listener.md)
-   * [InAiR activity lifecycle](1-getting-started/2-inair-activity-lifecycle.md)
+   * [InAiR Application](1-getting-started/2-inair-application.md)
    * [Application Manifest](1-getting-started/3-application-manifest.md)
 
 
