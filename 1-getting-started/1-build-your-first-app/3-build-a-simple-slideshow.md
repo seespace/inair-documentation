@@ -76,4 +76,4 @@ Now run your application again, you would get something like this.
 
 ![InAiR App With a Photo](../../images/running.jpg "InAiR App With a Photo")
 
-Proceed to the next lesson to learn how you can use *Binding* to make the Slideshow.
+Proceed to the [next lesson]() to learn how you can use *Binding* to make the Slideshow.
