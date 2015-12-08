@@ -29,4 +29,29 @@ To make the process easier, we've provided [InAiR App Generator](../../Airman.md
 ![Done](../../images/airman3.png)
 
 Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next lesson.
->**Note:** For additional help using Android Studio, read [Tips and Tricks](http://developer.android.com/sdk/installing/studio-tips.html).
+
+Create a Project with Command Line Tools
+----------------------------------------
+InAiR App Generator is the GUI for [Yeoman](http://yeoman.io). Yeoman helps you to kickstart new projects, prescribing best practices and tools to help you stay productive. Install Yeoman using this one-line command:
+
+```
+npm install -g yo
+```
+
+Then install InAiR generators:
+
+```
+npm install -g generator-inair-blankapp
+npm install -g generator-inair-layeredapp
+```
+
+You're now have global `yo` command line tool and 2 generators: inair-blankapp & inair-layeredapp. To generate a new __BlankApp__, run:
+
+```
+yo inair-blankapp
+```
+
+Enter Application Name & Package Name and `yo` will generate a project for you.
+
+![Yeoman](../../images/yo.png)
+
