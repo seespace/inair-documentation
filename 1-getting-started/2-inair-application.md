@@ -32,7 +32,15 @@ The system calls this method when **IAActivity** is completely terminated and wi
 ## IAFragment
 As InAiR Fragment (`IAFragment`) subclasses Android Fragment, understanding [Android Fragment](http://developer.android.com/guide/components/fragments.html) is mandatory.
 
-Since **IAFragment** can be see as sub activity, it has it's own lifecycle callback methods. Although **IAFragment** is `Android Fragment`, you can not access to Android fragment's callback methods. Just like **IAActivity**, **IAFragment** also has two most important callback methods `onInitialize()` (the must implement method) and `onFinalize()`
+Since **IAFragment** can be see as sub activity, it has it's own lifecycle callback methods. Although **IAFragment** is `Android Fragment`, you can not access to Android fragment's callback methods.
+
+Just like **IAActivity**, **IAFragment** also has callback method like `onApplicationWillTerminate()` and `onApplicationDidTerminate()` where you can hook your actions on terminating application process. Besides, it also has two most important callback methods:
+
+ - `onInitialize()`
+You must implement this method. The system calls this when creating the **IAFragment**. Within your implementation, you should initialize essential components of the **IAFragment**. Most importantly, this is where you must call **setRootContentView()** to define the layout for the IAFragment's user interface.
+
+ - `onFinalize()`
+ The system calls this method when **IAFragment** is completely destroyed. This is usually where you should commit any changes that should be release your **IAFragment** resources.
 
 **IAFragment** is also subclass of [IANavigation](#), it has all [Navigation callbacks](#navigation-callbacks) too.
 
@@ -40,7 +48,7 @@ Since **IAFragment** can be see as sub activity, it has it's own lifecycle callb
 Both **IAActivity** and **IAFragment** can display more detail information through child **IAFragment**. You can use [Present - Dismiss](../2-api-guides/4-animation-and-graphics/3-present-dismiss.md) feature to do that.
 
 - `onChildLayoutWillPresent(IAFragment child)`
-The system calls this method when **IAFragment** will present `child` **IAFragment**.
+The system calls this method when **IAFragment** is preparing to present `child` **IAFragment**.
 
 - `onChildLayoutDidPresent(IAFragment child)`
 The system calls this method when **IAFragment** presented `child` **IAFragment**.
