@@ -91,6 +91,6 @@ Events handling are almost always done from the __Activity__.
   };
     ```
 
-
+That's it, you can now Build and Run your project.
 
 Get the full source code for this demo here: [https://github.com/seespace/hello-world-example](https://github.com/seespace/hello-world-example)
