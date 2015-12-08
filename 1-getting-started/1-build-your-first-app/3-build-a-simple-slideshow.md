@@ -71,9 +71,46 @@ The `<UIImageView>` element should read as follows:
     ui:src="@drawable/photo1"
     />
 ```
+
+Here are the `<UIImageView>` attributes you added:
+
+* `ui:id` This provides a unique identifier for the view, which you can use to reference the object from your app code, such as to read and manipulate the object (you'll see this in the next lesson). It works exactly the same way as [__`android:id`__](http://developer.android.com/reference/android/view/View.html#attr_android:id)
+* `ui:width` and `ui:height` Define image's size. Note that `ui:positionX` and `ui:positionY` attributes are not defined, which will have the default value 0.
+* `ui:src` Sets a drawable as the content of this UIImageView. At the moment, the [photo1](../../images/photo1.jpg) is being displayed.
  
+Add photo title & photo description
+-----------------------------------
+
+1. In Android Studio, from the `res/layout` directory, edit the `activity_main.xml` file.
+2. Within the `<UIViewGroup>` element, define 2 `<UITextView>` elements.
+
+It should read as follows:
+
+```xml
+<UITextView
+    ui:height="60.0"
+    ui:width="800.0"
+    ui:text="Photo Name"
+    ui:textColor="@color/white"
+    ui:fontSize="40.0"
+    ui:fontStyle="bold"
+    ui:alpha="1.0"
+    ui:positionY="540.0"
+    />
+
+ <UITextView
+    ui:height="400.0"
+    ui:width="800.0"
+    ui:text="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus."
+    ui:textColor="@color/white"
+    ui:fontSize="24.0"
+    ui:alpha="1.0"
+    ui:positionY="600.0"
+    />
+```
+
 Now run your application again, you would get something like this.
 
 ![InAiR App With a Photo](../../images/running.jpg "InAiR App With a Photo")
 
-Proceed to the next lesson to learn how you can use *Binding* to make the Slideshow.
+Proceed to the [next lesson]() to learn how you can use *Binding* to make the Slideshow.
