@@ -3,7 +3,7 @@ This lesson will guide you through building a simple Place Application like [Fig
 __First of all:__ we using InAiR Layered App Template
 
 ###Creating a layered view
-Open the `first_layer.xml` file from `res/layout`
+Open the `first_layout.xml` file from `res/layout`
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -15,13 +15,13 @@ Open the `first_layer.xml` file from `res/layout`
       ui:height="248"
       ui:positionX="0"
       ui:positionY="100"
-      ui:src="@drawable/ic_inairlogo" />
+      ui:src="@drawable/logohi" />
 
     <UITextView
       ui:width="310"
       ui:positionX="0"
       ui:positionY="400"
-      ui:text="Welcome to InAiR Layered View Template"
+      ui:text="InAiR - This is the first layer with static content"
       ui:fontSize="40" />
 
   </UIViewGroup>
@@ -51,18 +51,17 @@ public class FirstViewModel extends ViewModel implements LayeredItemViewData {
 }
 ```
 
-> ####Note:
-> FirstViewModel is a view model for one layer, it need to be implement `LayeredItemViewData` interface and override `getTitle()` method to provide `title` for each layered in UILayeredNavigation. 
-> Override `getShouldOpen()` method to provide open or close door for each layered. Default, getShouldOpen() return true
+> __Note__: FirstViewModel is a view model for one layer, it need to be implement `LayeredItemViewData` interface and override `getTitle()` method to provide `title` for each layered in UILayeredNavigation. Override `getShouldOpen()` method to provide open or close door for each layered. Default, getShouldOpen() return true.
 
 ###Creating a view file for bind view model to layered
-Open the `FirstLayer.java` file inside the `view` package
+Open the `FirstFragment.java` file inside the `view` package
 
 ```java
-public class FirstLayer extends IAFragment {
+public class FirstFragment extends IAFragment {
   @Override
-  public void onInitialize(Bundle bundle) {
-    setAndBindRootContentView(R.layout.first_layer, new FirstViewModel(this));
+  public void onInitialize(Bundle savedInstanceState) {
+    setRootContentView(R.layout.first_layout);
+    setDataContext(new FirstViewModel(this));
   }
 }
 ```
