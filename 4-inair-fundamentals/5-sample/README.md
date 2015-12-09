@@ -218,9 +218,51 @@ private void randomText() {
 
 Every each 5 second we got a sentence and show in view with method `textViewModel.setContent(content)`. This will trigger changes property and refresh view with a new data. 
 
+Now run your application, and the text will change automatic each 5 second.
+
+If you don't want to use xml layout you can use programmatic to build the view and binding. Edit class `MainActivity` like this:
+
+```java
+@Override
+  public void onInitialize(Bundle bundle) {
+    textViewModel = new TextViewModel(this);
+
+    uiViewGroup = new UIViewGroup(this);
+    uiTextTitleView = new UITextView(this);
+    uiTextContentView = new UITextView(this);
+
+    uiTextTitleView.setHeight(200.0f);
+    uiTextTitleView.setWidth(400.0f);
+    uiTextTitleView.setFontSize(30.0f);
+    uiTextTitleView.setPosition(1280, 100, 0);
+
+    Binding titleBinding = new Binding("title");
+    titleBinding.setSource(textViewModel);
+    uiTextTitleView.setBinding(UITextView.TextProperty, titleBinding);
+
+    uiTextContentView.setHeight(200.0f);
+    uiTextContentView.setWidth(400.0f);
+    uiTextContentView.setFontSize(20.0f);
+    uiTextContentView.setPosition(1280, 250, 0);
+
+    Binding contentBinding = new Binding("content");
+    contentBinding.setSource(textViewModel);
+    uiTextContentView.setBinding(UITextView.TextProperty, contentBinding);
+
+    uiViewGroup.addView(uiTextTitleView);
+    uiViewGroup.addView(uiTextContentView);
+
+    textViewModel.setTitle(TextViewModel.TITLE);
+    setRootContentView(uiViewGroup);
+
+    randomText();
+  }
+```
+
 Now run your application again, and the text will change automatic each 5 second.
 
 Advance Binding
 ---
+
 
 
