@@ -264,5 +264,7 @@ Now run your application again, and the text will change automatic each 5 second
 Advance Binding
 ---
 
+Because the second `UITextView` will change automatic every 5 second so height this view is dynamic. Now if you want change text color of the title when height of the view content more than 100 pixel we'll use **Converter**.
+
 
 
