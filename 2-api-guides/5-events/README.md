@@ -1,5 +1,5 @@
-Overview
-========
+Event Handling
+==============
 This section contains topics that describe the delegate model, show how to consume events in applications, and describe how to raise events from your class.
 
 ## Events and Event Listeners
