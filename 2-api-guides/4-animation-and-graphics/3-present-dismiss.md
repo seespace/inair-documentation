@@ -40,3 +40,4 @@ By default, swipe right will dismiss the presented view. In case of you want to 
     }, 10000);
   }
 ```
+You can also customize the presenting/dismissing by provide PresentParam argument when call __present()__ and DismissParam argument when call __dismiss()__. Head to our reference docs [PresentParam](link) and [DismissParam](link) for more information.
