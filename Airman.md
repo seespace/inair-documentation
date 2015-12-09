@@ -1,4 +1,4 @@
-InAiR App Generator [![Build Status](https://travis-ci.org/longseespace/yeoman-app.svg)](https://travis-ci.org/longseespace/yeoman-app)
+InAiR App Generator [![Build Status](https://travis-ci.org/longseespace/yeoman-app.svg)](https://travis-ci.org/longseespace/yeoman-app) [![npm version](https://badge.fury.io/js/airman-app.svg)](https://badge.fury.io/js/airman-app)
 ===================
 
 ![Airman](images/airman.png)
