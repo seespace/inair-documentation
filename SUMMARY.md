@@ -13,16 +13,34 @@
 * [API Guides](2-api-guides/1-introduction/README.md)
    * [App Components](2-api-guides/2-app-components/1-app-components.md)
    * User Interface
-   * Animation and graphics
-       * Overview
-       * Transform
-       * Animation
+       * UIView
+       * UILayeredNavigation
+       * UIListView
+       * UIMenuView
+       * UITextView
+       * UIImageView
+       * UIGalleryView
+       * UIBounceMenu
+       * UIPieMenu
+       * UIPopupView
+       * UIProgressBar
+       * UIRectView
+       * UIScrollView
+       * UISlider
+       * UIStackView
+       * UIViewGroup
+       * UISwitch
+       * UIComboBox
+       * UIMediaPlayer
+   * [Animation and graphics](2-api-guides/4-animation-and-graphics/README.md)
+       * [Transform](2-api-guides/4-animation-and-graphics/1-transform.md)
+       * [Animation](2-api-guides/4-animation-and-graphics/2-animation.md)
        * [Present/Dismiss](2-api-guides/4-animation-and-graphics/4-present-dismiss.md)
-   * [Events](2-api-guides/5-events/index.md)
-       * [Consuming Events](2-api-guides/5-events/1. Consuming Events.md)
-       * [Raising an Event](2-api-guides/5-events/2. Raising an Event.md)
-       * [Routed Event](2-api-guides/5-events/3. Routed Event.md)
-       * [Input Event](2-api-guides/5-events/4. Input Event.md)
+   * [Events](2-api-guides/5-events/README.md)
+       * [Consuming Events](2-api-guides/5-events/1-consuming-events.md)
+       * [Raising an Event](2-api-guides/5-events/2-raising-an-event.md)
+       * [Routed Event](2-api-guides/5-events/3-routed-event.md)
+       * [Input Event](2-api-guides/5-events/4-input-event.md)
    * [InAiR Services](2-api-guides/1-introduction/inair_services_overview.md)
        * [Input Service](input_service.md)
        * Remote service
