@@ -34,4 +34,14 @@ Help and Support
 
 You can ask a question or signal an issue in the [GitHub](https://github.com/longseespace/yeoman-app/issues) issue page.
 
+Change Log
+----------
+**[0.1.2]**
+* Add `Navigate` menu, allow `Go Back` and `Go Home`
 
+**[0.1.1]**
+* Update generators to version 0.1.1
+* Add `Edit` menu, allow `Copy`, `Cut`, `Paste` etc.
+
+**[0.1.0]** 
+* Initial release
