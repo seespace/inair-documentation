@@ -1,9 +1,12 @@
-This topic describes the concept of routed events in InAir Framework. The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
+Routed Event
+============
+
+This topic describes the concept of routed events in InAiR Framework. The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
 
 ## Prerequisites
-This topic assumes that you have basic knowledge of InAir `Event` and object-oriented programming, as well as the concept of how the relationships between InAir UI elements can be conceptualized as a tree.  
+This topic assumes that you have basic knowledge of InAiR `Event` and object-oriented programming, as well as the concept of how the relationships between InAiR UI elements can be conceptualized as a tree.  
 
-## What Is a Routed Event?
+## What is a Routed Event?
 A routed event is a type of event that can invoke handlers on multiple listeners in an element tree, rather than just on the object that raised the event.
 
 A typical application contains many elements. Whether created in code or declared in XML, these elements exist in an element tree relationship to each other. The event route can travel in one of two directions depending on the event definition, but generally the route travels from the source element and then "bubbles" upward through the element tree until it reaches the element tree root. This bubbling concept might be familiar to you if you have worked with the DHTML object model previously.
@@ -35,14 +38,11 @@ The following example shows the declaration for a custom `Swipe` routed event, i
 
 ```java
 public static final RoutedEvent SwipeEvent = EventManager.registerRoutedEvent(
-  "Swipe", 
-  RoutingStrategy.Bubble, 
-  Delegate.class, 
-  Gesture.class
+    "Swipe", 
+    RoutingStrategy.Bubble, 
+    Gesture.class
 );
 ```
-
-[RoutedEvent]: http://developer.inair.tv/documents/inair/event/RoutedEvent.html
 
 ## Routing Strategies
 
@@ -56,17 +56,20 @@ Routed events use one of three routing strategies:
 
 ## Adding and Implementing an Event Handler for a Routed Event
 
-Routed event handlers can always be added through `UIView` method `addHandler`.
+Routed event listeners can always be added through `UIView` method `addEventListener`.
 
 ```java
-void makeImageView() {
-  UIImageView imageView = new UIImageView();
-  imageView.addHandler(UIView.DoubleTapEvent, Delegate.create(this, "onImageDoubleTap", TouchEventArgs.class));
-}
+  void makeImageView() {
+    UIImageView imageView = new UIImageView();
+    imageView.addEventListener(UIView.DoubleTapEvent, onImageDoubleTap);
+  }
 
-void onImageDoubleTap(Object sender, TouchEventArgs args) {
-  //logic to handle the double tap event
-}
+  private Event.Listener<TouchEventArgs> onImageDoubleTap = new Event.Listener<TouchEventArgs>() {
+    @Override
+    public void onTrigger(Object sender, TouchEventArgs args) {
+      ...
+    }
+  };
 ```
 
 ## The Concept of Handled
@@ -86,12 +89,8 @@ In addition to the behavior that `handled` state produces in routed events, the 
 
 In applications, it is quite common to just handle a bubbling routed event on the object that raised it, and not be concerned with the event's routing characteristics at all. However, it is still a good practice to mark the routed event as handled in the event data, to prevent unanticipated side effects just in case an element that is further up the element tree also has a handler attached for that same routed event.
 
-[RoutedEventArgs]: http://developer.inair.tv/documents/inair/event/RoutedEventArgs.html
-
 ## Class Handlers
 
 If you are defining a class that derives in some way from [DependencyObject][DependencyObject], you can also define and attach a class handler for a routed event that is a declared or inherited event member of your class. Class handlers are invoked before any instance listener handlers that are attached to an instance of that class, whenever a routed event reaches an element instance in its route.
 
 Some controls have inherent class handling for certain routed events. This might give the outward appearance that the routed event is not ever raised, but in reality it is being class handled, and the routed event can potentially still be handled by your instance handlers if you use certain techniques. Also, many base classes and controls expose virtual methods that can be used to override class handling behavior.
-
-[DependencyObject]: http://developer.inair.tv/documents/inair/data/DependencyObject.html
