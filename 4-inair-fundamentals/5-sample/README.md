@@ -266,5 +266,89 @@ Advance Binding
 
 Because the second `UITextView` will change automatic every 5 second so height this view is dynamic. Now if you want change text color of the title when height of the view content more than 100 pixel we'll use **Converter**.
 
+We have to bind height of the second text view to textColor in first text view because height change and textColor change too.
+
+1. In **Android Studio**, in the java directory, select the package, **tv.inair.sample.binding**, right-click, and select **New > Package**.
+2. In the **Create New Package** window, set the package name is **converter** and click OK.
+3. Select package **converter**, right-click, create new java class and set name is `TextColorConverter`.
+3. Open the `TextColorConverter.java` file.
+4. Class `TextColorConverter` must implements interface `IValueConverter` and override two method as below:
+
+```java
+public class TextColorConverter implements IValueConverter {
+  public static final TextColorConverter INSTANCE = new TextColorConverter();
+
+  @Override
+  public Object convert(Object value, Class<?> targetType) {
+    if (((float) value) > 100) {
+      return Color.CYAN;
+    }
+
+    return Color.BLUE;
+  }
+
+  @Override
+  public Object convertBack(Object value, Class<?> targetType) {
+    return null;
+  }
+}
+
+```
+
+We have to way to use class `TextColorConverter` <br />
+
+**1. Use with xml.**
+
+Edit xml file as below:
+
+```xml
+<UITextView
+    ui:height="200.0"
+    ui:width="400.0"
+    ui:text="{Binding Path='title'}"
+    ui:textColor="{Binding Path='height', Source='contentId', Converter='tv.inair.sample.binding.converter.TextColorConverter' }"
+    ui:fontSize="35"
+    ui:alpha="1.0"
+    ui:positionX="1280.0"
+    ui:positionY="100.0"
+    ui:positionZ="0.0"/>
+
+  <UITextView
+      ui:id="@+id/contentId"
+      ui:height="200.0"
+      ui:width="400.0"
+      ui:text="{Binding Path='content'}"
+      ui:textColor="@color/white"
+      ui:fontSize="25"
+      ui:alpha="1.0"
+      ui:positionX="1280.0"
+      ui:positionY="280.0"
+      ui:positionZ="0.0"/>
+
+```
+
+Now run your application again and see the result.
+
+**2. Use with programmatic.**
+
+Exit class `MainActivity` like this:
+
+```java
+@Override
+  public void onInitialize(Bundle bundle) {
+    ...
+    uiTextTitleView.setBinding(UITextView.TextProperty, titleBinding);
+
+    Binding colorBinding = new Binding(uiTextContentView, UITextView.HeightProperty, TextColorConverter.INSTANCE);
+    uiTextTitleView.setBinding(UITextView.TextColorProperty, colorBinding);
+
+    uiTextContentView.setHeight(200.0f);
+    ...
+}
+```
+
+Now run your application again and see the result.
+
+
 
 
