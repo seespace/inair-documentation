@@ -1,3 +1,6 @@
+Raising an Event
+================
+
 If you want your class to raise an event, you must provide the following three elements:
 
 - A class that provides event data.
