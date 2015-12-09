@@ -148,5 +148,79 @@ Notice the function `notifyPropertyChanged("<property's name>")`. This function 
 The Activity
 ---
 
+In the class 'TextViewModel' edit like this:
+
+```java
+...
+public class TextViewModel extends ViewModel {
+    ...
+    public static final String TITLE = "These are possibly the 5 best sentences you’ll ever read and all applicable to this experiment:";
+    public static final String[] STRING_ARRAY = {
+      "1. You cannot legislate the poor into prosperity by legislating the wealthy out of prosperity.",
+      "2. What one person receives without working for, another person must work for without receiving.",
+      "3. The government cannot give to anybody anything that the government does not first take from somebody else.",
+      "4. You cannot multiply wealth by dividing it!",
+      "5. When half of the people get the idea that they do not have to work because the other half is going to take care of them, and when the other half gets the idea that it does no good to work because somebody else is going to get what they work for, that is the beginning of the end of any nation."
+  };
+    ...
+}
+```
+
+In the class `MainActivity` edit like this
+
+```java
+public class MainActivity extends IAActivity {
+
+  public static final String TAG = "Binding Sample";
+  private TextViewModel textViewModel;
+
+  @Override
+  public void onInitialize(Bundle bundle) {
+    textViewModel = new TextViewModel(this);
+    setAndBindRootContentView(R.layout.activity_main, textViewModel);
+    
+    textViewModel.setTitle(TextViewModel.TITLE);
+    randomText();
+  }
+}
+```
+
+Function `setAndBindRootContentView(idView, viewModel)` will set root view to for this activity and set view will bind to viewModel. 
+
+View will show random 5 sentences every 5 second in variable array `ARRAY_STRING` in class `TextViewModel`, so we wrote a method in class `MainActivity` to do that:
+
+```java
+private void randomText() {
+    final Handler handler = new Handler();
+    Timer timer = new Timer();
+    TimerTask task = new TimerTask() {
+      @Override
+      public void run() {
+        handler.post(new Runnable() {
+          @Override
+          public void run() {
+            int randInt = randomInt(0, TextViewModel.STRING_ARRAY.length - 1);
+            String content = TextViewModel.STRING_ARRAY[randInt];
+            textViewModel.setContent(content);
+          }
+        });
+      }
+    };
+
+    timer.schedule(task, 0, 5000);
+  }
+
+  private int randomInt(int min, int max) {
+    Random rand = new Random();
+    return rand.nextInt((max - min) + 1) + min;
+  }
+```
+
+Every each 5 second we got a sentence and show in view with method `textViewModel.setContent(content)`. This will trigger changes property and refresh view with a new data. 
+
+Now run your application again, and the text will change automatic each 5 second.
+
+Advance Binding
+---
 
 
