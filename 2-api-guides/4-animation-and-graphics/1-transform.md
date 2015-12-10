@@ -14,30 +14,32 @@ You can easily translate, scale, and rotate your drawing using the InAiR's trans
 
 > <img src="../../images/transform1.png" width="600"/>
 
-
 ## Sample Code
-### Modifying the Current Transformation Matrix through Transform Util Class.
+### Modifying the Current Transformation Matrix with Transform Util Class.
 
-The following line of code get an image from it's layout file then apply some simple transfomation:
+The following line of code initialize an image view then apply some simple transfomation to it:
 
 ```java
+// Initialize the view
+UIImageView imageView = new UIImageView(this);
+imageView.setSource(getResources().getDrawable(R.drawable.ic_inairlogo));
+imageView.setSize(200, 200);
+imageView.setPosition(860, 440, 0);
 
-//Get image from the Layout
-UIImageView image = (UIImageView)findUIViewById(R.id.image);
+// Remember to add the image to the root view
+rootView.addView(imageView);
 
-// Create a transform this easily. Note: Order of each transform in the chain matters.
+// Create a transform
 float[] transform = Transform.fromIdentity()
-                          .scale(0.5f, 0.5f, 1.0f)
-                          .rotate(45, 0.0f, 1.0f, 0.0f)
-                          .translate(-300.0f, 300.0f, 0)
-                          .build();
+  .translate(-300.0f, 0.0f, 0)
+  .scale(0.5f, 0.5f, 1.0f)
+  .rotate(90, 0.0f, 0.0f, 1.0f)
+  .build();
 
-//Set to the current CTM
-image.setTransform(transform);
-
+//Set transform to the view
+imageView.setTransform(transform);
 ```
-Here's the result
-> <img src="../../images/transform2.png" width="600"/>
+The image will appear half in size, 300px to the left from its original position (center of the screen) and is rotated by 90 degrees clockwise.
 
 If you want to return to the original object as defined in the layout file, then just setTransform to identity.
 
@@ -46,4 +48,3 @@ image.setTransform(Transform.fromIdentity().build());
 ```
 
 > **Note:** the translate function is affected by other previous transformation, e.g: if you scaled the object by 0.5, then translate the object 400px, then on the __device space__ (TV) is appeared to be translated only 200px; if you rotated the object previously, then translating the X-axis wouldn't always move horizontally.
-
