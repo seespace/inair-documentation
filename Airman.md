@@ -9,7 +9,7 @@ Download
 --------
 
 * [OS X](https://download.inair.tv/airman/airman-osx-v0.1.2.zip)
-* [Window x64]()
+* [Window x64](https://download.inair.tv/airman/airman-win32-x64-v0.1.2.zip)
 * [Window x86]()
 
 Usages
@@ -38,6 +38,7 @@ Change Log
 ----------
 **[0.1.2]**
 * Add `Navigate` menu, allow `Go Back` and `Go Home`
+* Fix win32 fatal issue
 
 **[0.1.1]**
 * Update generators to version 0.1.1
