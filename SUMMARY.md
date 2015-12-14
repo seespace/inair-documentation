@@ -12,7 +12,7 @@
    * [Application Manifest](1-getting-started/3-application-manifest.md)
 * [API Guides](2-api-guides/1-introduction/README.md)
    * [App Components](2-api-guides/2-app-components/1-app-components.md)
-   * [User Interface](#user-interface)
+   * [User Interface](2-api-guides/3-user-interface/2-using-collection-view/README.md)
        * UIView
        * [UILayeredNavigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/README.md)
             + [Setting up the layered navigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/1-setting-up-the-layerednavigation.md)
