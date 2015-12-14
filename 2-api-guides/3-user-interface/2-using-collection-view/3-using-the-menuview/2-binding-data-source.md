@@ -1,7 +1,9 @@
-This guide will help you create a model view file and binding to `UIMenuView` items
+## Binding sata source
 
-###Creating a model view file for item in UIMenuView
-As in `UIListView` [Guide](http://google.com) explained, create new model `ColorMenuItemViewModel.java` then complete it. Remember, put this line of code `notifyPropertyChanged("<attribute name>");` in every Setters of attributes which need to bind to the Layout.
+This tutorial will help you create a view model file and binding to `UIMenuView` items.
+
+###Creating a view model file for item in UIMenuView
+As in `UIListView` [tutorial](#uilistview) explained, create new view model `ColorMenuItemViewModel.java`. Remember, put this line of code `notifyPropertyChanged("<attribute name>");` in every Setters of attributes which need to bind to the Layout.
 ```java
 import ...;
 
@@ -41,10 +43,10 @@ public class ColorMenuItemViewModel extends ViewModel implements ItemViewData {
     public CharSequence getTag() {	return "word";	}
 }
 ```
-###Populate data for UIMenuView
+### Populate data for UIMenuView
 
-Just create new `ColorMenuViewModel` with a `ObservableCollection` attribute and populate it with your data. 
-Complete `ColorMenuViewModel`
+Create new `ColorMenuViewModel` with a `ObservableCollection` instance and populate it with your data. 
+Complete `ColorMenuViewModel`:
 ```java
 import ...;
 
@@ -119,13 +121,13 @@ Open `menuview_layout.xml` and add binding code for `itemViewModels`:
     </UIMenuView>
 </UIViewGroup>
 ```
-Now you can compile and run your project!
+Now you can build and run your app!
 
 ###First look of inAir Animations
 
 Your app is ready now but the animation is not satisfy you? The rest of this guide will show you a first look of inAir Animation to make your app more visually.  
 
-By default `UIMenuView` use inAir default Animation, if you want to custom this, add this attribute `ui:useDefaultAnimation` = `"false"` to  `UIMenuView`.
+By default `UIMenuView` use inAir default Animation, if you want to custom this, add this attribute `ui:useDefaultAnimation` and set it to `"false"` in  `UIMenuView`.
 ```xml
 <UIMenuView
     ui:height="1080"
@@ -144,12 +146,13 @@ By default `UIMenuView` use inAir default Animation, if you want to custom this,
     </template>
 </UIMenuView>
 ```    
-Next, open `RootLayout.java` and add two attributes
+Next, open `RootLayout.java` and add two [`UIViewDescriptor`]() instance:
+```java
+static final UIViewDescriptor DEFAULT_ITEM_STATE = UIViewDescriptor.create().alpha(0.65f).transform(Transform.fromIdentity().build()).sealed();
+static final UIViewDescriptor HIGHLIGHT_ITEM_STATE = UIViewDescriptor.create().alpha(1f).transform(Transform.fromIdentity().scale(1.3f).translateX(50.0f).build()).sealed(); 
+```
 
-	static final UIViewDescriptor DEFAULT_ITEM_STATE = UIViewDescriptor.create().alpha(0.65f).transform(Transform.fromIdentity().build()).sealed();
-    static final UIViewDescriptor HIGHLIGHT_ITEM_STATE = UIViewDescriptor.create().alpha(1f).transform(Transform.fromIdentity().scale(1.3f).translateX(50.0f).build()).sealed(); 
-
-Look closer to these attributes, as you can see, the `alpha()` method will set the level of transparent, the value `0f` mean totally transparent and `1f` mean no transparent. The `transform()` method make the transformations such as `scale`, `translateX`, `translateY` and so on (More information you can look at [Animation](http://google.com) guide section).
+As you can see, the `alpha()` method will set the transparency, the value `0f` mean totally transparent and `1f` mean totally opaque. The `transform()` method make the transformations such as `scale`, `translateX`, `translateY` and so on (More information you can look at [Animation](http://google.com) guide section).
  
 `DEFAULT_ITEM_STATE` will be the state for normal items in our `UIMenuView` which make the item transparent with `alpha = 0.65f` and `HIGHLIGHT_ITEM_STATE` will be the state for highlighted item which make it fully display with `alpha = 1f`, scale up to 1.3 time and translate 50px to the right from its original place. 
 
