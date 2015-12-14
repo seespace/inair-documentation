@@ -1,3 +1,5 @@
+# Setting up the Layered Navigation
+
 This tutorial will guide you through building a simple Place Application in `Overview` section.
 
 __First of all:__ We using InAiR Layered App Template.
