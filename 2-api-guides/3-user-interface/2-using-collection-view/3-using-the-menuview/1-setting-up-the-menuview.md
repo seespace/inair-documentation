@@ -1,9 +1,11 @@
-The following of this guide will guide you through building simple Color Application as in Figure 1. 
+# Setting up the Menu View
+
+This tutorial will guide you through building simple Color Application using `UIMenuView`.
 
 First of all: Create your app using **InAir Blank App Template**.
 
 ###Creating the Main Layout XML File:
-Create a `menuview_layout.xml` in `res/layout` directory and set up a `ViewGroup` that would contain our `UIMenuView` with some specific like below:
+Create a `menuview_layout.xml` in `res/layout` directory and set up a `UIViewGroup` that contains our `UIMenuView` with some specific attributes as below:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UIViewGroup
@@ -18,7 +20,7 @@ Create a `menuview_layout.xml` in `res/layout` directory and set up a `ViewGroup
 	</UIMenuView>
 </UIViewGroup>
 ```
-Then define some attribute for our `UIMenuView` 
+Then define some attributes for our `UIMenuView` 
 ```xml
 <UIMenuView
     ui:height="1080"
@@ -53,7 +55,7 @@ Complete `menuview_item_layout.xml` file:
         ui:fontSize="40" />
 </UIViewGroup>  
 ```
-Now, just like in [`UIListView` Guide](http://google.com), we insert `<template>` element with `<DataTemplate>` to define the item layout which `UIMenuView` will display.
+Now, just like in [`UIListView`](http://google.com) tutorial, we insert `<template>` element with `<DataTemplate>` to define the item layout which `UIMenuView` will display.
 ```xml
 UIMenuView
     ui:height="1080"
@@ -71,4 +73,4 @@ UIMenuView
     </template>
 </UIMenuView> 
 ```
-Your application is nearly completed. Proceed to the next lesson to learn how you can use *Binding* to complete the application and some *Animations* to make your app more visually.
+Your application is nearly completed. Proceed to the next tutorial to see how you can use **Binding** to complete the application and some **Animations** to make your app more visually.
