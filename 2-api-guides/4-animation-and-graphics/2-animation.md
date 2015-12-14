@@ -18,20 +18,21 @@ imageView.setSource(getResources().getDrawable(R.drawable.ic_inairlogo));
 imageView.setSize(200, 200);
 imageView.setPosition(860, 440, 0);
 
-// Let's create the translate transform
-float[] translateTransform = Transform.fromIdentity().translateX(500.0f).build();
-// and the target alpha
-float targetAlpha = 0.5f;
-// also the animation duration (in ms)
-long duration = 2000;
+// Add our view to the root view
+rootView.addView(imageView);
+
+// Create the target descriptor with UIViewDescriptor
+UIViewDescriptor imageDescriptor = UIViewDescriptor.createFromView(imageView);
+imageDescriptor.translateX(300.0f);
+imageDescriptor.alpha(0.5f);
 
 // Then simply create an animator with the help of UIAnimation.createAnimationForView()
-Animator animator = UIAnimation.createAnimationForView(imageView, translateTransform, targetAlpha, duration);
+Animator animator = UIAnimation.createAnimationForView(imageView, imageDescriptor, 2000);
 
 // The only thing left is to start the animator
 animator.start();
 
 ```
-That's it, with just these simple lines of code, the image will smoothly translate 500px to the X-axis and change its transparency to halve in 2 seconds.
+That's it, with just these simple lines of code, the image will smoothly translate 300px to the right and change its transparency to 0.5f in 2 seconds.
 
-Take a look at [`UIAnimation`](#ui-animation) class for much more convenient methods to play with. Have fun!
+Take a look at [`UIAnimation`](#ui-animation) and [`UIViewDescriptor`](#ui-view-descriptor) class for more useful functions.
