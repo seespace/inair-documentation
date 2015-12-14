@@ -75,7 +75,7 @@ Let's add more parameters to the class's constructor to initialize all propertie
     }
 ```    
 ### Prepare content for each layers
-Create the `MainViewModel.java` extends `ViewModel` implements `LayeredItemViewData`. We will use this `MainViewModel` as data context of `main_layout.xml` and the only Layer of our app which contain an `UIListView`:
+Create the `MainViewModel.java` extends `ViewModel` implements `LayeredItemViewData`. We will use this `MainViewModel` as data context of `main_layout.xml` and the only layer of our app which contain an `UIListView`:
 ```java
 package tv.inair.apptemplate.viewmodel;
 	  
@@ -109,7 +109,7 @@ public MainViewModel(IAContext context) {
 ```
 
 ### Binding data to layout
-Back to our layouts, open previous created `right_layout.xml`. There 're two properties inside this XML we need to change in order to bind with our **Model View** properties declared previously:
+Back to our layouts, open previous created `right_layout.xml`. There're two properties inside this XML we need to change in order to bind with our **View Model** properties declared previously:
 
 • `ui:color` of `UIRectView`
 
@@ -157,7 +157,7 @@ Do the same with `left_layout.xml` file, we will have the finalize content like 
 </UIViewGroup>
 ```
 
-The syntax `{Binding Path: <property name>} `will tell the layout to look for the corresponding variable inside the model view and listen for changes produced by the binding property's Setter.
+The syntax `{Binding Path: '<property name>'}` will tell the layout to look for the corresponding variable inside the view model and listen for changes produced by the binding property's setter.
 
 Finally, it's the time for grab it together. Open the `main_layout.xml` file from `res/layout`. Add binding code for `itemsSource`:
 ```xml
@@ -180,4 +180,4 @@ Finally, it's the time for grab it together. Open the `main_layout.xml` file fro
     </UIListView>
 </UILayeredViewItem>
 ```
-__That is, you can now try to Build and Run your project.__
+That's it, you can now try to **Build** and **Run** your app.
