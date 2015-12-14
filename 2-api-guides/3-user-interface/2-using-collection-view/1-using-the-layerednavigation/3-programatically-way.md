@@ -1,6 +1,7 @@
 ###Programmatically way
-Open the ThirdLayer.java file inside the view package, you should see the following content:
-Now, create UILayeredViewItem and setTitle(), setShouldOpen() for this layer:
+
+Open the `ThirdLayer.java` file inside the view package, you should see the following content:
+Now, create `UILayeredViewItem` and setTitle(), setShouldOpen() for this layer:
 
 ```java
 public class ThirdLayer extends IAFragment {
@@ -28,5 +29,4 @@ After created layer, setContentView for our layer:
 
   setRootContentView(root);
 ```
-><h4>Note:</h4>
-UILayeredViewItem can have only one content view
+>**Note**: UILayeredViewItem can have only one content view. So if you want more than one single view, remember to wrap all your uiviews into a single view (e.g. UIViewGroup).
