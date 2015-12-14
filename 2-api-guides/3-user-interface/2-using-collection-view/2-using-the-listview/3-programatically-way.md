@@ -1,5 +1,7 @@
+## Programmatically way
+
 This section will help you to create an `UIListView` with custom list items without XML Layout.
-Notice that : not all the views in this guide are programmatically created, but the `UIListView`, as we're talking about `UIListView`. And sure, you can programmatically create all those views.
+Notice that not all the views in this guide are programmatically created, but the `UIListView`, as we're talking about `UIListView`. And sure, you can programmatically create all those views.
 
 Let's start from our recent `UIListView` demo app.
 
@@ -65,7 +67,7 @@ public void onInitialize(Bundle bundle) {
     setAndBindRootContentView(root, new MainViewModel(this));
 }
 ```
-Finally, bind list items data for `UIListView`. We've known that the data for list items is `itemViewModels` property of `MainViewModel`. So create a `MainViewModel` then bind data and do not forget binding root's content view data object to that new `MainViewModel`:
+Finally, bind list items data for `UIListView`. We've known that the data for list items is `itemViewModels` property of `MainViewModel`. So create a `MainViewModel` then bind data and do not forget to bind root content view data object to that new `MainViewModel`:
 ```java
 @Override
 public void onInitialize(Bundle bundle) {
@@ -89,4 +91,4 @@ public void onInitialize(Bundle bundle) {
     setAndBindRootContentView(root, mainViewModel);
 }
 ```
-And now you can try again to Build and Run your project. Enjoy!
+And now you can try again to **Build** and **Run** your app. Enjoy!
