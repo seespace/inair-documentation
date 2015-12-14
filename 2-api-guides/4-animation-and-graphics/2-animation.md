@@ -35,4 +35,4 @@ animator.start();
 ```
 That's it, with just these simple lines of code, the image will smoothly translate 300px to the right and change its transparency to 0.5f in 2 seconds.
 
-Take a look at [`UIAnimation`](#ui-animation) and [`UIViewDescriptor`](#ui-view-descriptor) class for more useful functions.
+Take a look at [`UIAnimation`](#ui-animation) and [`UIViewDescriptor`](#ui-view-descriptor) classes for more useful functions.
