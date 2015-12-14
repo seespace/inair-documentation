@@ -1,7 +1,9 @@
-This lesson will teach you the basic of creating a model view file and binding to layered navigation items source within InAiR SDK.
+# Binding data source
+
+This tutorial will help you create a model view file and binding to layered navigation items source within InAiR SDK.
 
 ###Creating a model view file for one layer
-Open the `SecondViewModel.java` file inside the `viewmodel` package, you should see the following content:
+Open the `SecondViewModel.java` file inside the `viewmodel` package.
 Now, our layout has two elements that will be diffirent between each others: the image, and it's description. Let's create two properties that shall be used to bind to our layout:
 ```java
 private String text;
@@ -28,20 +30,21 @@ public void setImage(int image) {
 }
 ```
 Notice the function `notifyPropertyChanged("<property's name>");` that is being used on every setters? This function will tell the system that the corresponding property has changed and the layout should refresh to update with the new value.
-Let's add more parameters to the class' constructor to initialize all properties we need.
+
+The data can be set to the properties right here in the view model, or pass down from layout when call the view model's constructor. For this example, we specify the sample data right in the view model constructor, just like this:
 ```java
 // Constructor
-public SecondViewModel(IAContext context, String text, int imageSrc) {
+public SecondViewModel(IAContext context) {
     super(context);
     setText("InAiR - This is the second layer screen with binding content");
     setImage(R.drawable.ic_logo2d3d);
 }
 ```
 ###Finalize the layered layout XML
-Open the `second_layer.xml` file from `res/layout`
+Open the `second_layer.xml` file from `res/layout`.
 Since we use `second_layer.xml` as a template, content of `UIImageView`and `UITextView` will depend on the data that showing on each layer, we need to use `DataBinding`.
 
-There're two properties inside this XML we need to change in order to bind with our Model View properties declared previously:
+There're two properties inside this XML we need to change in order to bind with our View Model properties declared previously:
 
 - `ui:src` of __`UIImageView`__
 - `ui:text` of __`UITextView`__
@@ -70,17 +73,18 @@ Complete XML file should be like this:
   </UIViewGroup>
 </UILayeredViewItem>
 ```
-The syntax `{Binding Path: <property name>}` will tell the layout to look for the corresponding variable inside the model view and listen for changes produced by the binding property's setter.
+The syntax `{Binding Path: <property name>}` will tell the layout to look for the corresponding variable inside the view model and listen for changes produced by the binding property's setter.
 
-###Prepare content for layers
+###Prepare content for layer
 ```java
 public class SecondLayer extends IAFragment {
   @Override
   public void onInitialize(Bundle bundle) {
-    setAndBindRootContentView(R.layout.second_layer,
-      new SecondViewModel(this, "InAiR - This is the second layer screen with binding content", R.drawable.ic_logo2d3d));
+    setRootContentView(R.layout.second_layer);
+    setDataContext(new SecondViewModel(this));
   }
 }
 ```
+Here we use `setRootContentView()` to specify which layout is our root content view for our layer. And we use `setDataContext()` to specify which view model is bound to that root layout. Or for short, we can use `setAndBindRootContentView(the_layout, the_view_model)` to do the same thing.
 
-__That is, you can now try to Build and Run your project.__
+That's it, you can now try to **Build** and **Run** your app.
