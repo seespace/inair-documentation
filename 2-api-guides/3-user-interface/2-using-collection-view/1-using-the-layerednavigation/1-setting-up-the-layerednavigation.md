@@ -1,6 +1,6 @@
-This lesson will guide you through building a simple Place Application like [Figure 1]() in `Overview` section.
+This tutorial will guide you through building a simple Place Application in `Overview` section.
 
-__First of all:__ we using InAiR Layered App Template
+__First of all:__ We using InAiR Layered App Template.
 
 ###Creating a layered view
 Open the `first_layout.xml` file from `res/layout`
@@ -51,7 +51,7 @@ public class FirstViewModel extends ViewModel implements LayeredItemViewData {
 }
 ```
 
-> __Note__: FirstViewModel is a view model for one layer, it need to be implement `LayeredItemViewData` interface and override `getTitle()` method to provide `title` for each layered in UILayeredNavigation. Override `getShouldOpen()` method to provide open or close door for each layered. Default, getShouldOpen() return true.
+> __Note__: FirstViewModel is a view model for one layer, it need to be implement `LayeredItemViewData` interface and override `getTitle()` method to provide `title` for each layered in UILayeredNavigation. Override `getShouldOpen()` method to provide open or close door for each layered. By default, getShouldOpen() returns true.
 
 ###Creating a view file for bind view model to layered
 Open the `FirstFragment.java` file inside the `view` package
@@ -65,4 +65,4 @@ public class FirstFragment extends IAFragment {
   }
 }
 ```
-Great, now you have the basic layout laid out. Proceed to the next lesson to learn how you can use *Binding* to complete the application.
+Great, now you have the basic layout laid out. Proceed to the next tutorial to learn how you can use *Binding* to complete the application.
