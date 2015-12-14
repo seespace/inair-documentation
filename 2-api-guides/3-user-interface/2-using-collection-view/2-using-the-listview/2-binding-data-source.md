@@ -1,4 +1,4 @@
-This lesson will teach you the basic of creating a model view file and binding to list view items source within InAiR SDK.
+This section will show you the basic of creating a model view file and binding to list view items source within InAiR SDK.
 
 ### Creating a model view file for item in list view
 Create `ColorItemViewModel.java` file and save it to the `viewmodel` package. Since this class is **view model**, it need to be inherited from `ViewModel` class. Otherwise, the `ColorItemViewModel` is also an item of **collection view**, it need to be implement `ItemViewData` interface and override `getTag()` method to provide tag data for this **item view**. The `ColorItemViewModel.java` should look like this:
