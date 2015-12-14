@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-
 * [Getting Started](1-getting-started/README.md)
    * [Build your first app](1-getting-started/1-build-your-first-app/README.md)
        * [Creating an InAiR Project](1-getting-started/1-build-your-first-app/1-creating-an-inair-project.md)
@@ -9,24 +8,53 @@
        * [Build a simple slideshow](1-getting-started/1-build-your-first-app/3-build-a-simple-slideshow.md)
        * [Binding data](1-getting-started/1-build-your-first-app/4-binding-data.md)
        * [Add input listener](1-getting-started/1-build-your-first-app/5-add-input-listener.md)
-   * [InAiR activity lifecycle](1-getting-started/2-inair-activity-lifecycle.md)
+   * [InAiR Application](1-getting-started/2-inair-application.md)
    * [Application Manifest](1-getting-started/3-application-manifest.md)
-
-
 * [API Guides](2-api-guides/1-introduction/README.md)
-    * [Introduction](2-api-guides/1-introduction/README.md)
-    * [App Components](2-api-guides/2-app-components/1-app-components.md)
-    * User Interface
-    * [Animation and graphics](2-api-guides/4-animation-and-graphics/1. Overview.md)
-        * [Overview](2-api-guides/4-animation-and-graphics/1. Overview.md)
-        * [Transform](2-api-guides/4-animation-and-graphics/2. Tranform.md)
-        * [Animation](2-api-guides/4-animation-and-graphics/3. Animation.md)
-        * [Present/Dismiss](2-api-guides/4-animation-and-graphics/4-present-dismiss.md)
-    * [Events](2-api-guides/5-events/index.md)
-        * [Consuming Events](2-api-guides/5-events/1. Consuming Events.md)
-        * [Raising an Event](2-api-guides/5-events/2. Raising an Event.md)
-        * [Routed Event](2-api-guides/5-events/3. Routed Event.md)
-        * [Input Event](2-api-guides/5-events/4. Input Event.md)
+   * [App Components](2-api-guides/2-app-components/1-app-components.md)
+   * [User Interface](2-api-guides/3-user-interface/2-using-collection-view/README.md)
+       * [UILayeredNavigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/README.md)
+            + [Setting up the layered navigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/1-setting-up-the-layerednavigation.md)
+            + [Binding data source](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/2-binding-data-source.md)
+            + [Programmatically way](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/3-programatically-way.md)
+       * [UIListView](2-api-guides/3-user-interface/2-using-collection-view/2-using-the-listview/README.md)
+            + [Setting up the list view](2-api-guides/3-user-interface/2-using-collection-view/2-using-the-listview/1-setting-up-the-listview.md)
+            + [Binding data source](2-api-guides/3-user-interface/2-using-collection-view/2-using-the-listview/2-binding-data-source.md)
+            + [Programmatically way](2-api-guides/3-user-interface/2-using-collection-view/2-using-the-listview/3-programatically-way.md)
+       * [UIMenuView](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/README.md)
+            + [Setting up the menu view](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/1-setting-up-the-menuview.md)
+            + [Binding data source](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/2-binding-data-source.md)
+            + [Programmatically way](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/3-programatically-way.md)
+       * UITextView
+       * UIImageView
+       * UIGalleryView
+       * UIBounceMenu
+       * UIPieMenu
+       * UIPopupView
+       * UIProgressBar
+       * UIRectView
+       * UIScrollView
+       * UISlider
+       * UIStackView
+       * UIViewGroup
+       * UISwitch
+       * UIComboBox
+       * UIMediaPlayer
+   * [Animation and graphics](2-api-guides/4-animation-and-graphics/README.md)
+       * [Transform](2-api-guides/4-animation-and-graphics/1-transform.md)
+       * [Animation](2-api-guides/4-animation-and-graphics/2-animation.md)
+       * [Present/Dismiss](2-api-guides/4-animation-and-graphics/3-present-dismiss.md)
+   * [Events](2-api-guides/5-events/README.md)
+       * [Consuming Events](2-api-guides/5-events/1-consuming-events.md)
+       * [Raising an Event](2-api-guides/5-events/2-raising-an-event.md)
+       * [Routed Event](2-api-guides/5-events/3-routed-event.md)
+       * [Input Event](2-api-guides/5-events/4-input-event.md)
+   * [InAiR Services](2-api-guides/1-introduction/inair_services_overviewX.md)
+       * [Input Service](input_service.md)
+       * Remote service
+       * Media Source Service
+       * Application Service
+* Resources
+   * Samples
+   * [InAiR App Generator](Airman.md)
 
-
-* Samples

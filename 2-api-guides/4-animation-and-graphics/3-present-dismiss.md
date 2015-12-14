@@ -5,18 +5,18 @@ Present/Dismiss is designed to display more information about something (for exa
 
 ## Implement
 **Prerequisite.**
-A presenting view - The parent view which contains the information you want to show more about.
-A presented view - The child view which contains the detail information.
+A parent view which contains the information you want to show more about.
+A child view which contains the detail information.
 
-If you want to present the presented view, simply call **present(presentedView)** on the presenting view.
-If you want to dismiss, simply call **dismiss()** on the presented view to hide it and return to the presenting view.
+If you want to present the child view, simply call **present(childView)** on the parent view.
+If you want to dismiss, simply call **dismiss()** on the child view to hide it and return to the parent view.
 
->Notice: If not set, the x, y and z position of the presented view will all be 0px, which is the top left of the screen. You can set the x and y position according to your app design but for the z-position, it should be set to 700 for better view in 3D mode. (For now, changing the z-position will also affect the x and y position when look at 2D).
+>Notice: If not set, the x, y and z position of the child view will all be 0px, which is the top left of the screen. You can set the x and y position according to your app design but for the z-position, it should be set to 700 for better view in 3D mode. (For now, changing the z-position will also affect the x and y position).
 
 ## Sample code
-Create a view named PresentWithSingleView - which represents the presenting view and a presented view also named PresentedSingleContentView.
+Create a view named PresentWithSingleView - which represents the parent view and a child view also named PresentedSingleContentView.
 
-Call **present(new PresentedSingleContentview())** on doubleTapListener will display the according view with animation from the right side of the screen to the position that is set to the view.
+Call **present(new PresentedSingleContentview())** on doubleTapToPresentListener will display the view with animation from the right side of the screen to the position that is set to the view.
 
 ```java
   Event.Listener<TouchEventArgs> doubleTapPresentListener = new Event.Listener<TouchEventArgs>() {
@@ -40,3 +40,4 @@ By default, swipe right will dismiss the presented view. In case of you want to 
     }, 10000);
   }
 ```
+You can also customize the presenting/dismissing by provide PresentParam argument when call __present()__ and DismissParam argument when call __dismiss()__. Head to our reference docs [PresentParam](link) and [DismissParam](link) for more information.

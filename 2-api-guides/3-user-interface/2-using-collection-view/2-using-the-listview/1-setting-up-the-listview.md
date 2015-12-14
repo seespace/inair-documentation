@@ -3,7 +3,7 @@ First of all: Create your app using InAir Blank App Template.
 
 ### Creating the Main Layout XML File: 
 
-Create the `main_layout.xml` file in `res/layout` directory. Since this application using a `UIListView`, we need to create an empty `UIListView` element as this code below. Notice the `itemTemplate` attribute, it defines the layout for your `UIListView` item. Remove this attribute make the data item would be displayed in the `UIListView` as the string representation of the data object it's bound to.
+Create the `main_layout.xml` file in `res/layout` directory. Since this application using a `UIListView`, we need to create an empty `UIListView` element as this code below. 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UILayeredViewItem
@@ -63,7 +63,10 @@ Complete `left_layout.xml` file:
 </UIViewGroup>
 ```
     
-Now we have all materials to create the item data template. Insert `template` element into `UIListView` as below: 
+Now we have all materials to create the item data template for the ListView. Insert `template` element with two `DataTemplate` to determind they layouts which `UIListView` will display its item
+
+Complete the XML file: 
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <UILayeredViewItem

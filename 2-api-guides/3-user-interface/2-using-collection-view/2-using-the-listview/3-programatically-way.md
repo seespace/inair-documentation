@@ -1,4 +1,4 @@
-This lesson will teach you how to create an `UIListView` with custom list items without XML Layout.
+This section will help you to create an `UIListView` with custom list items without XML Layout.
 Notice that : not all the views in this guide are programmatically created, but the `UIListView`, as we're talking about `UIListView`. And sure, you can programmatically create all those views.
 
 Let's start from our recent `UIListView` demo app.

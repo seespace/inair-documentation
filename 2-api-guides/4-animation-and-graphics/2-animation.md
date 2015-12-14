@@ -1,46 +1,38 @@
-InAir makes use of Android's [`AnimatorSet`](http://developer.android.com/reference/android/animation/AnimatorSet.html(android.animation.Animator)) class to apply animation to UIViews. We provide a helper class `UIAnimation` to make declaring animation easier.
+# Animation
 
-Let's look at the following example:
+## Overview
+In InAiR, animation is used everywhere to animate the views smoothly from state to state to make better user experience. InAiR makes use of Android's [`AnimatorSet`](http://developer.android.com/reference/android/animation/AnimatorSet.html) and [`Animator`](http://developer.android.com/reference/android/animation/Animator.html) to apply animation to UIViews. We provide a helper class [`UIAnimation`](#ui-animation) to make declaring animation easier.
+
+## Implement
+**Prerequisites**
+Simply, the UIView you want to apply animation to, either declared in xml file that could be get through **findUIViewById()**, or programmatically initialized.
+
+Using [`UIAnimation`](#ui-animation) static methods helps you easily create the animators that apply animation to the specific view. And the rest is similar to Android, you can play the animator instantly, or play it sequentially/together with other animators by an instance of [`AnimatorSet`](http://developer.android.com/reference/android/animation/AnimatorSet.html).
+
+For example, you want to translate an image 500px by X-axis, and animate its alpha to 0.5f, in a duration of 2 seconds simultaneously. Let's look at the code below:
 
 ```java
+// Initialize the view
+UIImageView imageView = new UIImageView(this);
+imageView.setSource(getResources().getDrawable(R.drawable.ic_inairlogo));
+imageView.setSize(200, 200);
+imageView.setPosition(860, 440, 0);
 
-   UIView view = ...   // we have view initialize in somewhere
+// Add our view to the root view
+rootView.addView(imageView);
 
-   // This is a set of animation so we make a set
-   AnimatorSet animSet = new AnimatorSet();
+// Create the target descriptor with UIViewDescriptor
+UIViewDescriptor imageDescriptor = UIViewDescriptor.createFromView(imageView);
+imageDescriptor.translateX(300.0f);
+imageDescriptor.alpha(0.5f);
 
-   // Set the animation duration to be 1000ms (1 sec)
-   animSet.setDuration(1000);
+// Then simply create an animator with the help of UIAnimation.createAnimationForView()
+Animator animator = UIAnimation.createAnimationForView(imageView, imageDescriptor, 2000);
 
-   // Interpolation aka Easing for animation
-   animSet.setInterpolator(new InOutQuadInterpolator());
+// The only thing left is to start the animator
+animator.start();
 
-   // matrix with scale function
-   float[] scaleTransform = UIAnimation.identityMatrix();
-   Matrix.scaleM(scaleTransform, 0, 1.2f, 2.0f, 0.0f);
-
-   // create scale animation
-   Animator scaleAnim = UIAnimation.createTransformAnimation(view, scaleTransform);
-
-   // create alpha animation
-   Animator alphaAnim = UIAnimation.createAlphaAnimation(view, alpha);
-
-   // setup animation chain
-   animSet.play(scaleAnim).with(alphaAnim);
-   ...
-
-   ...
-   // run animation
-   animSet.start();
 ```
+That's it, with just these simple lines of code, the image will smoothly translate 300px to the right and change its transparency to 0.5f in 2 seconds.
 
-The first lines of code assume that we get the target view from somewhere, either by `findUIViewWithId` from XML layouts, or creating a view programatically.
-
-This `AnimatorSet` class plays a set of Animator objects in the specified order. Animations can be set up to play together, in sequence, or after a specified delay. The following lines setup the basic properties of the `AnimatorSet` such as duration and easing interpolation.
-
-
-For this example, we wanted to __scale__ and object and change its __Alpha value__ (transparency). For scaling, we create a new float array that represent a __Matrix__ and apply an __scale transformation__([see our transformation article](#)) to the matrix. Then we create an [`Animator`](http://developer.android.com/reference/android/animation/Animator.html) that links between an UIView and a transformation matrix using [`UIAnimation`](http://developer.inair.tv/documents/inair/view/UIAnimation.html) which is basically InAir's helper for generating `Animator`. To create an animator that changes the Alpha value of the view, we simply pass an __`float`__ to `UIAnimator`'s `createAlphaAnimation` function.
-
-Finally, we excecute the animation chain by invoking `animSet.play(scaleAnim).with(alphaAnim)`
-
-If all done correctly, the view will smoothly resize and change its transparency in 1 second.
+Take a look at [`UIAnimation`](#ui-animation) and [`UIViewDescriptor`](#ui-view-descriptor) classes for more useful functions.
