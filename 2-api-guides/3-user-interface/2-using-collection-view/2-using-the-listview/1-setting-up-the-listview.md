@@ -1,5 +1,8 @@
-The following of this guide will guide you through building above simple Color Application.
-First of all: Create your app using InAir Blank App Template.
+# Setting up the List View
+
+The following of this tutorial will guide you through building simple Color Application.
+
+__First of all__: Create your app using InAir Blank App Template.
 
 ### Creating the Main Layout XML File: 
 
@@ -14,9 +17,8 @@ Create the `main_layout.xml` file in `res/layout` directory. Since this applicat
 </UILayeredViewItem>
 ```
 
-
 ### Define data template
-Create new XML file named `right\_layout.xml` and put it into `res/layout`. We use this file as a template for right color item of list view. Following the design, we need an `UIRectView` to present color and an `UITextView` to show a color name.
+Create new XML file named `right_layout.xml` and put it into `res/layout`. We use this file as a template for right color item of list view. Following the design, we need an `UIRectView` to present color and an `UITextView` to show a color name.
 
 Complete `right_layout.xml` file:
 
@@ -63,7 +65,7 @@ Complete `left_layout.xml` file:
 </UIViewGroup>
 ```
     
-Now we have all materials to create the item data template for the ListView. Insert `template` element with two `DataTemplate` to determind they layouts which `UIListView` will display its item
+Now we have all materials to create the item data template for the UIListView. Insert `template` element with two `DataTemplate` to determind they layouts which `UIListView` will display its item.
 
 Complete the XML file: 
 
@@ -85,4 +87,4 @@ Complete the XML file:
     </UIListView>
 </UILayeredViewItem>
 ```
-Now your application is nearly completed. Proceed to the next lesson to learn how you can use *Binding* to complete the application.
+Now your application is nearly completed. Proceed to the next tutorial to learn how you can use *Binding* to complete the application.
