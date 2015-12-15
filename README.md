@@ -3,7 +3,7 @@ InAiR Developer Guide
 
 This book contains the entire documentation for InAiR SDK.
 
-- To learn how apps work, start with [App Fundamentals](4-inair-fundamentals/README.md).
+- To learn how apps work, start with [App Fundamental](4-inair-fundamentals/README.md)
 - To begin coding right away, read [Building Your First App](1-getting-started/1-build-your-first-app/README.md).
 
 Help and Support
