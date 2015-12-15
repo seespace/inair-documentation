@@ -25,21 +25,6 @@
             + [Setting up the menu view](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/1-setting-up-the-menuview.md)
             + [Binding data source](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/2-binding-data-source.md)
             + [Programmatically way](2-api-guides/3-user-interface/2-using-collection-view/3-using-the-menuview/3-programatically-way.md)
-       * UITextView
-       * UIImageView
-       * UIGalleryView
-       * UIBounceMenu
-       * UIPieMenu
-       * UIPopupView
-       * UIProgressBar
-       * UIRectView
-       * UIScrollView
-       * UISlider
-       * UIStackView
-       * UIViewGroup
-       * UISwitch
-       * UIComboBox
-       * UIMediaPlayer
    * [Animation and graphics](2-api-guides/4-animation-and-graphics/README.md)
        * [Transform](2-api-guides/4-animation-and-graphics/1-transform.md)
        * [Animation](2-api-guides/4-animation-and-graphics/2-animation.md)
@@ -49,12 +34,6 @@
        * [Raising an Event](2-api-guides/5-events/2-raising-an-event.md)
        * [Routed Event](2-api-guides/5-events/3-routed-event.md)
        * [Input Event](2-api-guides/5-events/4-input-event.md)
-   * [InAiR Services](2-api-guides/1-introduction/inair_services_overviewX.md)
-       * [Input Service](input_service.md)
-       * Remote service
-       * Media Source Service
-       * Application Service
 * Resources
-   * Samples
    * [InAiR App Generator](Airman.md)
 
