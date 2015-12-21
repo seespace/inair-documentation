@@ -1,17 +1,6 @@
 Introduction
 ===============
 
-**Welcome to the InAiR Fundamentals study guide!**
+**Welcome to the InAiR Fundamentals!**
 
-This study guide is for those who want to prepare for the InAiR Fundamentals example. It provides information about the basic concept and pattern to design InAiR, how to use InAiR Framework build an exam app.
-
-Topics
-===============
-
-- [MVVM Pattern]()
-    - [What is MVVM?]()
-    - [Why to use it?]() 
-    - [Layers & Architecture?]()
-- [InAiR System]()
-    -  [Introduction]()
-    -  [Example]()
+This guide provide you the basic concepts that are commonly used in InAiR applications, such as: MVVM, data binding, dependency properties, converter.
