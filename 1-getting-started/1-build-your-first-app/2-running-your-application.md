@@ -73,7 +73,7 @@ adb install app/build/outputs/HelloWorld-debug.apk
 
 On your device, locate `HelloWorld` and open it.
 
-That's how you build and run your InAiR app on a device! To start developing, continue to the [next lesson](3-build-a-simple-slideshow.md).
+That's how you build and run your InAiR app on a device! To start developing, continue to the [next tutorial](3-build-a-simple-slideshow.md).
 
 Run on the Emulator
 -------------------
