@@ -3,9 +3,9 @@ Creating an InAiR Project
 
 An InAiR project contains all the files that comprise the source code for your InAiR app. The InAiR SDK tools make it easy to start a new InAiR project with a set of default project directories and files.
 
-This lesson shows how to create a new project using [InAiR App Generator](../Airman.md).
+This tutorial shows how to create a new project using [InAiR App Generator](../../Airman.md) .
 
->**Note:** You should already have the Android SDK, Android Studio and InAiR App Generator installed. If you don't have these, follow the guide to [Installing the Android SDK](http://developer.android.com/sdk/installing/index.html) before you start this lesson. 
+>**Note:** You should already have the Android SDK, Android Studio and InAiR App Generator installed. If you don't have these, follow the guide to [Installing the Android SDK](http://developer.android.com/sdk/installing/index.html) before you start this tutorial. 
 
 
 Create a project with InAiR App Generator
@@ -14,7 +14,7 @@ Although sharing lots of common libraries, InAiR Apps are quite different from a
 
 To make the process easier, we've provided [InAiR App Generator](../../Airman.md) for you to quickly start your development. If you haven't installed it yet, please follow instructions [here](../../Airman.md).
 
-1. Launch Airman and choose a template (__BlankApp__ in this lesson)
+1. Launch Airman and choose a template (__BlankApp__ in this tutorial)
 
 2. Select the output folder
 
@@ -28,7 +28,7 @@ To make the process easier, we've provided [InAiR App Generator](../../Airman.md
 
 ![Done](../../images/airman3.png)
 
-Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next lesson.
+Your InAir project is now a basic "Hello World" app that contains some default files. To run the app, continue to the next tutorial.
 
 Create a Project with Command Line Tools
 ----------------------------------------
