@@ -1,9 +1,9 @@
 Build a Simple Slideshow
 ========================
 
-Same as Android, InAiR app is built using a hierarchy of `UIView` and `UIViewGroup`. InAiR provides an XML vocabulary that corresponds to the subclasses of `UIView` and `UIViewGroup` so you can define your UI in XML using a hierarchy of UI elements.
+Similar to Android, InAiR app is built using a hierarchy of `UIView` and `UIViewGroup`. InAiR provides an XML vocabulary that corresponds to the subclasses of `UIView` and `UIViewGroup` so you can define your UI in XML using a hierarchy of UI elements.
 
-Continue from where we left off, this lesson will guide you through building a simple Photo Gallery App.
+Continue from where we left off, this tutorial will guide you through building a simple Photo Gallery App.
 
 Let's assume we want to try something like the following design:
 
@@ -74,7 +74,7 @@ The `<UIImageView>` element should read as follows:
 
 Here are the `<UIImageView>` attributes you added:
 
-* `ui:id` This provides a unique identifier for the view, which you can use to reference the object from your app code, such as to read and manipulate the object (you'll see this in the next lesson). It works exactly the same way as [__`android:id`__](http://developer.android.com/reference/android/view/View.html#attr_android:id)
+* `ui:id` This provides a unique identifier for the view, which you can use to reference the object from your app code, such as to read and manipulate the object (you'll see this in the next tutorial). It works exactly the same way as [__`android:id`__](http://developer.android.com/reference/android/view/View.html#attr_android:id)
 * `ui:width` and `ui:height` Define image's size. Note that `ui:positionX` and `ui:positionY` attributes are not defined, which will have the default value 0.
 * `ui:src` Sets a drawable as the content of this UIImageView. At the moment, the [photo1](../../images/photo1.jpg) is being displayed.
  
@@ -113,4 +113,4 @@ Now run your application again, you would get something like this.
 
 ![InAiR App With a Photo](../../images/running.jpg "InAiR App With a Photo")
 
-Proceed to the [next lesson]() to learn how you can use *Binding* to make the Slideshow.
+Proceed to the [next tutorial]() to learn how you can use *Binding* to make the Slideshow.
