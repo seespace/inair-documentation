@@ -1,7 +1,7 @@
 Getting Started
 ===============
 
-Welcome to Training for InAiR developers. Here you'll find sets of tutorials that teach you how to accomplish a specific task along with sample code which you can re-use in your app. Tutorials are organized into several groups as you can see at the top-level of the left navigation.
+Welcome to Training for InAiR developers. Here you'll find sets of tutorials that teach you how to accomplish specific tasks along with sample codes which you can re-use in your app. Tutorials are organized into several groups as you can see at the top-level of the left navigation.
 
 [Build Your First App](1-build-your-first-app/README.md)
 ---------------------
