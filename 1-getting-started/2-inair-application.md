@@ -8,21 +8,21 @@ In InAiR system, each IAActivity is an InAiR application. Because of this, InAiR
 ## IAActivity
 As InAiR's IAActivity subclasses Android's Activity, understanding Android [Activity](http://developer.android.com/guide/components/activities.html) is mandatory.
 
-Similar to Android's Activity, IAActivity also has activity's lifecycle callbacks, but you can not access those Android activity's callback methods. IAActivity provides others callback methods to manage it's own lifecycle. The two most important callback methods are:
+Similar to Android's Activity, IAActivity also has activity's lifecycle callbacks, but you can not access Android activity's callback methods. IAActivity provides others callback methods to manage it's own lifecycle. The two most important callback methods are:
 
 - `onInitialize()`
 You must implement this method. The system calls this when creating your IAActivity. Within your implementation, you should initialize the essential components of your IAActivity. Most importantly, this is where you must call `setRootContentView()` to define the layout for the IAActivity's user interface.
 
-- `onFinalize()`
-The system calls this method when IAActivity is completely destroyed. This is usually where you should commit any changes that should be release your application resources.
+- `onFinalize()`    
+The system calls this method right before IAActivity instance is completely destroyed. This is where you should commit any change you want to persist and release any remaining resource before your application is closed.
 
-Besides being InAiR application, IAActivity has InAiR application's own lifecycle callback methods:
+Besides being InAiR Activity, IAActivity also has its own application lifecycle callbacks:
 
 - `onLaunch()`
-The system calls this method when IAActivity is completely initialized. It means all layouts is created and displayed on screen. User control events are now dispatched directly to this IAActivity.
+The system calls this method when IAActivity is completely initialized. It means all layouts are created and displayed on screen. User control events are now dispatched directly to this IAActivity.
 
 - `onApplicationWillTerminate()`
-The system calls this method when IAActivity is preparing to destroyed or your InAiR Application will be terminated. Since being an InAiR application, IAActivity can be terminated by manually call [IAActivity.finish()](#) or by receiving the ***terminating application event*** from system.
+The system calls this method when IAActivity is preparing to be destroyed or your InAiR Application will be terminated. Since being an InAiR application, IAActivity can be terminated by manually call [IAActivity.finish()](#) or by receiving the ***terminating application event*** from system.
 
 - `onApplicationDidTerminate()`
 The system calls this method when IAActivity is completely terminated and will be destroyed soon.
@@ -30,9 +30,9 @@ The system calls this method when IAActivity is completely terminated and will b
 IAActivity is also subclass of [IANavigation](#), it has all [Navigation callbacks](#navigation-callbacks) too.
 
 ## IAFragment
-As InAiR `IAFragment` subclasses Android Fragment, understanding Android [Fragment](http://developer.android.com/guide/components/fragments.html) is mandatory.
+As InAiR `IAFragment` subclasses Android Fragment, therefore understanding Android [Fragment](http://developer.android.com/guide/components/fragments.html) is mandatory.
 
-Since IAFragment can be see as sub activity, it has it's own lifecycle callback methods. Although IAFragment is Android's Fragment, you can not access to Android fragment's callback methods.
+Since IAFragment can be seen as sub activity, it has it's own lifecycle callback methods. Although IAFragment is Android's Fragment, you can not access to Android fragment's callback methods.
 
 Just like IAActivity, IAFragment also has callback method like `onApplicationWillTerminate()` and `onApplicationDidTerminate()` where you can hook your actions on terminating application process. Besides, it also has two most important callback methods:
 
@@ -40,7 +40,7 @@ Just like IAActivity, IAFragment also has callback method like `onApplicationWil
 You must implement this method. The system calls this when creating the IAFragment. Within your implementation, you should initialize essential components of the IAFragment. Most importantly, this is where you must call `setRootContentView()` to define the layout for the IAFragment's user interface.
 
  - `onFinalize()`
- The system calls this method when IAFragment is completely destroyed. This is usually where you should commit any changes that should be release your IAFragment resources.
+ The system calls this method when IAFragment is completely destroyed. This is usually where you should commit any change and release your IAFragment resources.
 
 IAFragment is also subclass of [IANavigation](#), it has all [Navigation callbacks](#navigation-callbacks) too.
 
@@ -54,7 +54,7 @@ The system calls this method when IAFragment is preparing to present `child` IAF
 The system calls this method when IAFragment presented `child` IAFragment.
 
 - `onChildLayoutWillDismiss(IAFragment child)`
-The system calls this method when `child` IAFragment is preparing to dismiss.
+The system calls this method when `child` IAFragment is preparing to be dismissed.
 
 - `onChildLayoutDidDismiss(IAFragment child)`
 The system calls this method when `child` IAFragment is completely dismissed and current IAFragment has control back.
