@@ -5,7 +5,7 @@ We'll show you how to build an application with InAiR Framework with step by ste
 
 Let's Begin!
 
-1. [Create a project with InAiR App Generator](README.md)
+1. [Create a project with InAiR App Generator](../../1-getting-started/1-build-your-first-app/1-creating-an-inair-project.md)
 3. [Binding data](../../1-getting-started/1-build-your-first-app/4-binding-data.md)
  
 Create a project with InAiR App Generator
