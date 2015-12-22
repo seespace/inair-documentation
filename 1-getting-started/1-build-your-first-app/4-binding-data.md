@@ -1,14 +1,15 @@
 Binding Data
 ============
 
-InAiR SDK uses [data-binding](https://msdn.microsoft.com/en-us/library/ms752347%28v=vs.100%29.aspx) to connect between properties and layouts. This lesson will teach you the basic of creating a binding within InAiR SDK.
+InAiR SDK uses [data-binding](https://msdn.microsoft.com/en-us/library/ms752347%28v=vs.100%29.aspx) to connect between properties and layouts. This tutorial will teach you the basic of creating a binding within InAiR SDK.
 
 The View Model
 --------------
 1. In Android Studio, in the java directory, select the package, __com.example.helloworld__, right-click, and select __New__ > __Java Class__.
 2. In the __Create New Class__ window, set the class name `MainViewModel` and click __OK__
 3. Open the MainViewModel.java file.
-4. To use InAiR `ViewModel` APIs, our class must extend InAiR abstract class `ViewModel`. Create the required constructor with only one argument `IAContext`. 
+4. To use InAiR `ViewModel` APIs, our class must extend InAiR abstract class `ViewModel`. 
+5. Create the required constructor with only one argument `IAContext`. 
 
 Your class should read as follows:
 ```java
@@ -105,7 +106,7 @@ Notice the function `notifyPropertyChanged("<property's name>");` that is being 
 The Layout XML
 --------------
 
-At the moment, we have a fully working `ViewModel`. However, the view is using its hard-coded value in previous lesson. Update the layout to read values from our `ViewModel`
+At the moment, we have a fully working `ViewModel`. However, the view is using its hard-coded value in previous tutorial. Update the layout to read values from our `ViewModel`
 
 In Android Studio, from the `res/layout` directory, open the `activity_main.xml` file.
 
