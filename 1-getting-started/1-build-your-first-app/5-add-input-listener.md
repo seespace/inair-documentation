@@ -65,9 +65,9 @@ Setting up data
     }
     ```
 
-What we're doing here is creating 5 `ViewModel`s and by default, binding the layout to the first `ViewModel`. Everytime the `next()` method is called, the `Activity`'s ViewModel changes and the layout will bind to the new `ViewModel` which updates its photo & text.
+What we're doing here is creating a `ArrayList` of 5 `ViewModel` then bind our main layout `MainActivity` to the first item in the list. Everytime the `next()` method is called, the `Activity`'s ViewModel changes and the layout will bind to the new `ViewModel` which updates its photo & text.
 
-Good work, now we have our `ViewModel` ready with some dynamic data. What left todo is invoking `next()` method everytime user _double tap_ on anywhere on the controller.
+Good work, now we have our `ViewModel` ready with some dynamic data. What left to do is invoking `next()` method every time user _double tap_ on anywhere on the controller.
 
 Listening for InputEvent
 ------------------------
@@ -92,5 +92,12 @@ Events handling are almost always done from the __Activity__.
     ```
 
 That's it, you can now Build and Run your project.
+
+You'll need InAiR Remote app to interact with InAiR app you've just built. You can download the app from [here](https://www.inair.tv/remote). Once you have the app, follow below instructions:
+1. [Setup Wifi]() for InAiR box
+2. [Connect remote control app to InAiR box]()
+3. Open this app following standard [InAiR gestures]() control
+4. Double tap to change slide
+
 
 Get the full source code for this demo here: [https://github.com/seespace/hello-world-example](https://github.com/seespace/hello-world-example)
