@@ -9,7 +9,7 @@
        * [Binding data](1-getting-started/1-build-your-first-app/4-binding-data.md)
        * [Add input listener](1-getting-started/1-build-your-first-app/5-add-input-listener.md)
    * [InAiR Application](1-getting-started/2-inair-application.md)
-   * [Application Manifest](1-getting-started/3-application-manifest.md)
+
 * [App Fundamentals](4-inair-fundamentals/README.md)
    * [What is MVVM?](4-inair-fundamentals/1-what-is-mvvm/README.md)
    * [Why MVVM?](4-inair-fundamentals/2-why-to-use-mvvm/README.md)
@@ -21,7 +21,6 @@
    *  [Converter](4-inair-fundamentals/5-converter/README.md)
    *  [Examples](4-inair-fundamentals/6-example/README.md)
 * [API Guides](2-api-guides/1-introduction/README.md)
-   * [App Components](2-api-guides/2-app-components/1-app-components.md)
    * [User Interface](2-api-guides/3-user-interface/2-using-collection-view/README.md)
        * [UILayeredNavigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/README.md)
             + [Setting up the layered navigation](2-api-guides/3-user-interface/2-using-collection-view/1-using-the-layerednavigation/1-setting-up-the-layerednavigation.md)
@@ -44,6 +43,6 @@
        * [Raising an Event](2-api-guides/5-events/2-raising-an-event.md)
        * [Routed Event](2-api-guides/5-events/3-routed-event.md)
        * [Input Event](2-api-guides/5-events/4-input-event.md)
-* [Resources]()
+* [Resources](#)
    * [InAiR App Generator](Airman.md)
 
